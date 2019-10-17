@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Trilha de Aprendizagem</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}">
+   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+   <script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
+
+</head>
+
+<body>
+   <div class="container-fluid bg-3">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+
+         <h1> Trilha de Aprendizagem</h1>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_01">Janeiro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_02">Fevereiro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_03">Março</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_04">Abril</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_05">Maio</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_06">Junho</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_07">Julho</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_08">Agosto</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_09">Setembro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_10">Outubro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_11">Novembro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+         <div class="extrato_container_mes">
+            <div class="mes_titulo" id="mes_12">Dezembro</div>
+            <div class="mes_inside_container"></div>
+         </div>
+
+
+      </div>
+
+
+      <div class="col-sm-2"></div>
+   </div>
+
+</body>
+
+<script type='text/javascript'>
+   $(document).ready(function () {
+      gerar_trilha('{{ra_aluno}}', '{{pagina}}')
+      $('.mes_titulo').on('click', function (e) {
+         $(e.target).next().slideToggle('slow')
+      })
+   })
+</script>
+
+</html>

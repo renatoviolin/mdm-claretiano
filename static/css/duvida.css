@@ -1,0 +1,9 @@
+.duvida_conteudo {
+   height: 300px;
+   overflow: auto;
+   background: #ffffff;
+   border-radius: 4px;
+   border: solid 1px #bbb;
+   padding: 12px;
+   z-index: 1000;
+}

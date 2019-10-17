@@ -1,0 +1,93 @@
+div.extrato_container {
+   border: solid 1px rgb(200, 200, 200);
+   width: 100%;
+   margin-bottom: 20px;
+   background: rgb(244, 244, 244);
+   padding: 10px;
+   border-radius: 4px;
+
+}
+
+div.extrato_content {
+   max-height: 400px;
+   overflow-y: auto;
+}
+
+div.extrato_header {
+   background: rgb(13, 59, 142);
+   color: rgb(242, 242, 242);
+   height: 30px;
+   line-height: 30px;
+   padding-left: 5px;
+   font-size: 16px;
+   margin: -10px;
+   margin-bottom: 10px;
+}
+
+p.data {
+   color: rgb(13, 59, 142);
+   font-weight: bold;
+   margin-bottom: -1px;
+   padding-top: 5px;
+   width: 100%;
+   /* text-align: center */
+}
+
+.trilha_pesquisa,
+.trilha_definicao,
+.trilha_anotacao,
+.trilha_importante,
+.trilha_dificil,
+.trilha_mentor {
+   margin-top: 5px;
+   background-color: #ddf4c3;
+   padding: 5px;
+   border-radius: 4px;
+}
+
+.trilha_definicao {
+   background-color: #ddf4c3;
+
+}
+
+.trilha_anotacao {
+   background-color: #f1e1c8;
+}
+
+.trilha_importante {
+   background-color: #cebee8;
+}
+
+.trilha_dificil {
+   background-color: #ffd2d2;
+}
+
+.trilha_mentor {
+   background-color: #c9ecf1;
+}
+
+.arrow {
+   height: 40px;
+}
+
+div.header_trilha_box {
+   width: 100%;
+   font-size: 16px;
+   text-align: center;
+   font-weight: bold;
+   color: rgb(13, 59, 142);
+}
+
+
+div.extrato_container_mes {
+   padding-top: 20px;
+   display: none;
+}
+div.mes_titulo {
+   font-size: 18px;
+   margin-left: -60px;
+   border-bottom: solid 1px;
+   display: block;
+   color: rgb(13, 59, 142);
+   cursor: pointer;
+}
