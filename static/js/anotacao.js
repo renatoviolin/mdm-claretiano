@@ -72,9 +72,9 @@ jQuery(document).ready(function () {
          .fail(function (jqXHR, textStatus, jsondata) {
             jQuery("#modal").removeClass("loading");
             console.log(textStatus);
-            alert('Erro ao inserir o comentário');
+            alert('Erro ao inserir a anotação');
             jQuery("x-anotacao-destaque[id='" + id_paragrafo + "']").contents().unwrap();
-            jQuery("x-anotacao-destaque[id='" + id_paragrafo + "']").remove();
+            jQuery("x-anotacao-post_it[id='" + id_paragrafo + "']").remove();
          })
       range = null
       selected_text = ''
