@@ -45,9 +45,7 @@ jQuery(document).ready(function () {
       pageY = e.pageY;
    });
 
-
    jQuery('.col-sm-8, .fl-rich-text').mousedown(function (e) {
-   // jQuery('.col-sm-8').mousedown(function (e) {
       element_mouse_over = document.elementFromPoint(e.clientX, e.clientY);
       selected_text = ''
    });
@@ -59,7 +57,6 @@ jQuery(document).ready(function () {
       selected_text = x.Selector.getSelected().getRangeAt(0).toString();
       element_mouse_selected = element_mouse_over
       range = x.Selector.getSelected().getRangeAt(0)
-      console.log('Mouse UP: ', selected_text)
    });
 
 
