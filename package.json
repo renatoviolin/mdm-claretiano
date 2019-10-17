@@ -16,11 +16,8 @@
     "url": "https://github.com/renatoviolin/mdm-claretiano/issues"
   },
   "homepage": "https://github.com/renatoviolin/mdm-claretiano#readme",
-  "devDependencies": {
-    "git-scripts": "^0.2.1",
-    "surge": "^0.21.3",
-    "git": { "scripts": { "pre-push": "surge --project /Users/renato/Documents/Nextcloud/mdm-claretiano --domain plant-crow.surge.sh" } }
-  }
+  "devDependencies": { "surge": "latest", "git-scripts": "0.2.1" }, "git": { "scripts": { "pre-push": "surge --project /Users/renato/Documents/Nextcloud/mdm-claretiano --domain plant-crow.surge.sh" } }
+
   
 
 }
