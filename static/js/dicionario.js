@@ -1,6 +1,6 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
    // ----------- BUSCAR NO DICIONÁRIO E EXIBIR O RESULTADO ------------------
-   $('#dicionario_btn_menu').on("click", function (e) {
+   jQuery('#dicionario_btn_menu').on("click", function (e) {
       if (selected_text == '') return
       texto = selected_text.replace(/\s+/g, ' ').trim();
       qtde = texto.split(' ').length
@@ -9,7 +9,7 @@ $(document).ready(function () {
          selected_text = ''
          return;
       }
-      $.ajax({
+      jQuery.ajax({
             url: BASE_URL + "/api_dictionary",
             type: 'post',
             contentType: "application/json",
@@ -20,26 +20,26 @@ $(document).ready(function () {
                'palavra': selected_text,
             }),
             beforeSend: function () {
-               $("#modal").addClass("loading");
+               jQuery("#modal").addClass("loading");
             }
          })
          .done(function (jsondata) {
             console.log(jsondata)
-            $("#modal").removeClass("loading");
-            $('#dicionario_palavra').text(selected_text)
-            $('#dicionario_resultado').text(jsondata)
-            $('#dicionario_container').center().fadeIn(100);
+            jQuery("#modal").removeClass("loading");
+            jQuery('#dicionario_palavra').text(selected_text)
+            jQuery('#dicionario_resultado').text(jsondata)
+            jQuery('#dicionario_container').center().fadeIn(100);
             selected_text = ''
          })
          .fail(function (jqXHR, textStatus, jsondata) {
             console.log(jsondata);
-            $("#modal").removeClass("loading");
+            jQuery("#modal").removeClass("loading");
             selected_text = ''
          })
    })
 
    // ----------- FECHAR JANELA DICIONÁRIO ------------------
-   $('#dicionario_btn_fechar').on('click', function () {
-      $('#dicionario_container').fadeOut(100);
+   jQuery('#dicionario_btn_fechar').on('click', function () {
+      jQuery('#dicionario_container').fadeOut(100);
    })
 })

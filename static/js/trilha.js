@@ -1,9 +1,9 @@
-$(document).ready(function () {
-   $('#trilha_btn_menu').on('click', function () {
-      $('#form_ra_aluno').val(ra_aluno)
-      $('#form_pagina').val(pagina_atual)
-      $('form').attr('action', '/static_trilha');
-      $('form').submit()
+jQuery(document).ready(function () {
+   jQuery('#trilha_btn_menu').on('click', function () {
+      jQuery('#form_ra_aluno').val(ra_aluno)
+      jQuery('#form_pagina').val(pagina_atual)
+      jQuery('form').attr('action', '/static_trilha');
+      jQuery('form').submit()
    })
 
 })
@@ -11,7 +11,7 @@ $(document).ready(function () {
 function gerar_trilha(ra_aluno, pagina) {
    ra_aluno = ra_aluno
    pagina = pagina
-   $.ajax({
+   jQuery.ajax({
          url: "/api_get_trilha",
          type: 'post',
          contentType: "application/json",
@@ -35,24 +35,24 @@ function gerar_trilha(ra_aluno, pagina) {
             texto_html = ''
             if (tipo == 1) { // PESQUISAS
                container = `<div class='trilha_pesquisa'><div class="header_trilha_box">Pesquisou na internet</div>`
-               data = `<p class='data'>${date}</p>`
-               texto_html = container + data + `<p>Você pesquisou sobre o conteúdo "<b>${conteudo}</b>"</p></div>`
+               data = `<p class='data'>jQuery{date}</p>`
+               texto_html = container + data + `<p>Você pesquisou sobre o conteúdo "<b>jQuery{conteudo}</b>"</p></div>`
             }
 
             if (tipo == 2) { // DICIONÁRIO
                container = `<div class='trilha_definicao'><div class="header_trilha_box">Pesquisou na dicionário</div>`
-               data = `<p class='data'>${date}</p>`
-               texto_html = container + data + `<p>Você pesquisou sobre o termo "<b>${conteudo}</b>"</p></div>`
+               data = `<p class='data'>jQuery{date}</p>`
+               texto_html = container + data + `<p>Você pesquisou sobre o termo "<b>jQuery{conteudo}</b>"</p></div>`
             }
 
             if (tipo == 3) { // ANOTAÇÃO
                container = `<div class='trilha_anotacao'><div class="header_trilha_box">Anotou</div>`
-               data = `<p class='data'>${date}</p>`
-               texto_html = container + data + `<p>No conteúdo "${texto_par}..." você fez a anotação: <b>${conteudo}</b></p></div>`
+               data = `<p class='data'>jQuery{date}</p>`
+               texto_html = container + data + `<p>No conteúdo "jQuery{texto_par}..." você fez a anotação: <b>jQuery{conteudo}</b></p></div>`
             }
 
-            $('div[id=mes_' + mes + ']').next().append(texto_html)
-            $('div[id=mes_' + mes + ']').parent().show()
+            jQuery('div[id=mes_' + mes + ']').next().append(texto_html)
+            jQuery('div[id=mes_' + mes + ']').parent().show()
          }
 
       })
