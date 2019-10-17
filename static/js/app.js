@@ -59,6 +59,7 @@ jQuery(document).ready(function () {
       selected_text = x.Selector.getSelected().getRangeAt(0).toString();
       element_mouse_selected = element_mouse_over
       range = x.Selector.getSelected().getRangeAt(0)
+      console.log('Mouse UP: ', selected_text)
    });
 
 

@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
 
    // ========== ABRE A CAIXA DE ANOTAÇÃO =============
    jQuery('#anotacao_btn_menu').on("click", function (e) {
+      console.log('Anotar: ', selected_text)
       if (selected_text == '') {
          alert('Selecione um texto')
          return;
