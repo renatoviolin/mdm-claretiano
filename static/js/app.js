@@ -46,7 +46,7 @@ jQuery(document).ready(function () {
    });
 
 
-   jQuery('.fl-rich-text').mousedown(function (e) {
+   jQuery('.col-sm-8, .fl-rich-text').mousedown(function (e) {
    // jQuery('.col-sm-8').mousedown(function (e) {
       element_mouse_over = document.elementFromPoint(e.clientX, e.clientY);
       selected_text = ''
@@ -55,7 +55,7 @@ jQuery(document).ready(function () {
    all_p = jQuery('p');
    for (i = 0; i < all_p.length; i++) all_p[i].id = i;
 
-   jQuery('.fl-rich-text').bind("mouseup", function (e) {
+   jQuery('.col-sm-8, .fl-rich-text').bind("mouseup", function (e) {
       selected_text = x.Selector.getSelected().getRangeAt(0).toString();
       element_mouse_selected = element_mouse_over
       range = x.Selector.getSelected().getRangeAt(0)
