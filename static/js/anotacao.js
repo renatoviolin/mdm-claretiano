@@ -14,8 +14,8 @@ jQuery(document).ready(function () {
 
       jQuery("#modal").addClass("loading")
       jQuery('#anotacao_textarea').val('')
-      jQuery('#anotacao_textarea').focus()
       jQuery('#anotacao_container').center().fadeIn(100);
+      jQuery('#anotacao_textarea').focus()
       console.log(selected_text)
    });
 
