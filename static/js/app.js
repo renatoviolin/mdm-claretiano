@@ -47,7 +47,7 @@ $(document).ready(function () {
 
 
    // $('.fl-rich-text').mousedown(function (e) {
-   $('.col-sm-8').mousedown(function (e) {
+   $('.col-sm-8, .fl-rich-text').mousedown(function (e) {
       element_mouse_over = document.elementFromPoint(e.clientX, e.clientY);
       selected_text = ''
    });

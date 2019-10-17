@@ -22,12 +22,6 @@
 </head>
 
 <body>
-   <!---------- TRILHA DE APRENDIZAGEM ------------>
-   <form target="_blank" method="POST">
-      <input type="hidden" name="form_ra_aluno" id="form_ra_aluno" />
-      <input type="hidden" name="form_pagina" id="form_pagina" />
-   </form>
-
    <!----------- MENU LATERAL ------------>
    <div class="modal" id='modal'></div>
    <div class="menu_lateral" id="menu_lateral">
@@ -36,11 +30,15 @@
       <div class="btn_menu_lateral" id="pesquisa_btn_menu">PE<span class='tooltiptext'>Faça uma pesquisa na internet</span></div>
       <div class="btn_menu_lateral" id="dicionario_btn_menu">DC<span class='tooltiptext'>Busque uma palavra no dicionário</span></div>
       <div class="btn_menu_lateral" id="trilha_btn_menu">TR<span class='tooltiptext'>Veja sua trilha de aprendizagem</span></div>
-      
-
    </div>
 
+   <!---------- TRILHA DE APRENDIZAGEM ------------>
+   <form target="_blank" method="POST">
+      <input type="hidden" name="form_ra_aluno" id="form_ra_aluno" />
+      <input type="hidden" name="form_pagina" id="form_pagina" />
+   </form>
 
+   
    <!--------- JANELA ANOTAR ------------->
    <div class="anotacao_container" id="anotacao_container">
       <div class="container_header">Anotações</div>
