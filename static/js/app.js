@@ -12,7 +12,7 @@ var BASE_URL = 'http://renato.dynu.net:8000'
 // var BASE_URL = ''
 
 jQuery(document).ready(function () {
-
+   alert("Funcionou")
    jQuery.fn.center = function () {
       this.css("position", "absolute");
       this.css("top", Math.max(0, ((jQuery(window).height() - jQuery(this).outerHeight()) / 2) +
@@ -62,7 +62,7 @@ jQuery(document).ready(function () {
 
 
 
-   // ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================ 
+   // ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================
    // all_h = jQuery('h2')
    // for (i = 0; i < all_h.length; i++) {
    //   h = all_h[i]
