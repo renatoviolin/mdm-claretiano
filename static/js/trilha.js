@@ -12,7 +12,8 @@ function gerar_trilha(ra_aluno, pagina) {
    ra_aluno = ra_aluno
    pagina = pagina
    jQuery.ajax({
-         url: BASE_URL + "/api_get_trilha",
+         // url: BASE_URL + "/api_get_trilha",
+         url: "/api_get_trilha",
          type: 'post',
          contentType: "application/json",
          dataType: 'json',
