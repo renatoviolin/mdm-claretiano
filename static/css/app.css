@@ -106,3 +106,10 @@
    visibility: visible;
    opacity: 1;
 }
+
+/*CUSTOMIZAR BOTÕES DOS RECURSOS*/
+
+.fa-sticky-note, .fa-question-circle, .fa-search, .fa-book, .fa-list-alt {
+  font-size: 24px;
+  vertical-align: -50%;
+}
