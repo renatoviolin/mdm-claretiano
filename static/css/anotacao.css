@@ -47,3 +47,13 @@ div.anotacao_excluir {
 div.anotacao_excluir:hover {
    background: #c7c978;
 }
+
+.btn-primary {
+  background-color: #0d3b8e;
+  border-color: #0d3b8e;
+}
+
+.btn-primary:hover {
+  background-color: #0099f2;
+  border-color: #0099f2;
+}

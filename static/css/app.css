@@ -16,7 +16,6 @@
 .btn_menu_lateral {
    margin: 5px;
    text-align: center;
-   border: solid 1px;
    border-radius: 2px;
    height: 40px;
    cursor: pointer;
@@ -49,13 +48,16 @@
 .pesquisa_container,
 .dicionario_container {
    display: none;
-   width: 500px;
-   border: solid 1px;
+   width: 400px;
+   border: solid 1px #6f6f6f;
    position: absolute;
    padding: 10px;
    background: #f2f2f2;
    border-radius: 4px;
    z-index: 2000;
+   -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.6);
+   -moz-box-shadow:    1px 1px 9px 0px rgba(50, 50, 50, 0.6);
+   box-shadow:         1px 1px 9px 0px rgba(50, 50, 50, 0.6);
 }
 
 .container_header {
@@ -81,25 +83,26 @@
    text-align: center;
    border-radius: 4px;
    padding: 5px;
-   position: absolute;
    z-index: 1;
    bottom: 1%;
    left: 50%;
-   margin-left: -175px;
+   margin-left: -165px;
    opacity: 0;
    transition: opacity 0.3s;
    -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
    -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
    box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+   float: left;
 }
 
 .tooltiptext::after {
    content: "";
-   position: absolute;
+   position: relative;
    right: 0%;
    border-width: 5px;
    border-style: solid;
    border-color: transparent #2f373c transparent transparent;
+
 }
 
 .btn_menu_lateral:hover .tooltiptext {
@@ -110,6 +113,6 @@
 /*CUSTOMIZAR BOTÕES DOS RECURSOS*/
 
 .fa-sticky-note, .fa-question-circle, .fa-search, .fa-book, .fa-list-alt {
-  font-size: 24px;
+  font-size: 24px !important;
   vertical-align: -50%;
 }
