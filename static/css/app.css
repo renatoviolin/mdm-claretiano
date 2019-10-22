@@ -116,3 +116,14 @@
   font-size: 24px !important;
   vertical-align: -50%;
 }
+
+/*CUSTOMIZAR DOS CONTAINERS*/
+.btn-primary {
+  background-color: #0d3b8e;
+  border-color: #0d3b8e;
+}
+
+.btn-primary:hover {
+  background-color: #0099f2;
+  border-color: #0099f2;
+}
