@@ -56,6 +56,13 @@ jQuery(document).ready(function () {
       selected_text = x.Selector.getSelected().getRangeAt(0).toString();
       element_mouse_selected = element_mouse_over
       range = x.Selector.getSelected().getRangeAt(0)
+
+      // se deu dois clicks e pegou o final do range como outro elemento
+      if (range.endOffset == 0) {
+         console.log('entrou no range')
+         range.setEnd(range.startContainer, range.endContainer.previousElementSibling.innerHTML.length)
+      }
+
    });
 
 
