@@ -5,7 +5,6 @@ div.extrato_container {
    background: rgb(244, 244, 244);
    padding: 10px;
    border-radius: 4px;
-
 }
 
 div.extrato_content {
@@ -26,7 +25,7 @@ div.extrato_header {
 
 p.data {
    color: rgb(13, 59, 142);
-   font-weight: bold;
+   font-size: 12px;
    margin-bottom: -1px;
    padding-top: 5px;
    width: 100%;
@@ -50,21 +49,18 @@ p.data {
 
 }
 
+.trilha_pesquisa {
+   background-color: #c3eaf4;
+
+}
+
 .trilha_anotacao {
    background-color: #fffe71;
 }
 
-.trilha_importante {
-   background-color: #cebee8;
-}
-
-.trilha_dificil {
-   background-color: #ffd2d2;
-}
-
-.trilha_mentor {
+/*.trilha_duvida {
    background-color: #c9ecf1;
-}
+}*/
 
 .arrow {
    height: 40px;

@@ -12,7 +12,7 @@ x-anotacao-post_it {
    float: right;
    padding: 10px;
    margin-left: -220px;
-   margin-right: 120px;
+   /*margin-right: 120px;*/
    margin-bottom: 5px;
    color: black;
    background: rgb(251, 255, 184);
@@ -47,4 +47,14 @@ div.anotacao_excluir {
 
 div.anotacao_excluir:hover {
    background: #c7c978;
+}
+
+@media screen and (max-width: 1365px) {
+  x-anotacao-post_it {
+     width: 140px !important;
+     left: 150px !important;
+  }
+  .anotacao_conteudo {
+     width: 135px;
+  }
 }
