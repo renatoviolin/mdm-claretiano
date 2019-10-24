@@ -11,6 +11,7 @@ x-anotacao-post_it {
    position: relative;
    float: right;
    padding: 10px;
+   margin-right: 10px;
    margin-left: -220px;
    /*margin-right: 120px;*/
    margin-bottom: 5px;
@@ -26,7 +27,7 @@ x-anotacao-post_it {
    -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
    box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
    overflow-wrap: anywhere;
-   z-index: 1000;
+   z-index: 0;
 }
 
 
@@ -49,12 +50,17 @@ div.anotacao_excluir:hover {
    background: #c7c978;
 }
 
-@media screen and (max-width: 1365px) {
-  x-anotacao-post_it {
-     width: 140px !important;
-     left: 150px !important;
+@media only screen and (max-width: 1365px) {
+  x-anotacao-post_it  {
+  clear: none;
+  display: inline;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  position: sticky;
   }
   .anotacao_conteudo {
-     width: 135px;
+     width: 90% !important;
   }
 }
