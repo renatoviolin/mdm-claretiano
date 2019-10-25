@@ -42,7 +42,8 @@
    <!--------- JANELA ANOTAR ------------->
    <div class="anotacao_container" id="anotacao_container">
       <div class="container_header">Anotações</div>
-      <textarea class="message form-control" rows="3" id="anotacao_textarea"></textarea>
+      <textarea class="message form-control" rows="3" maxlength="140" id="anotacao_textarea"></textarea>
+      <div class="anotar_caractere_restante"><span class="caracteres_restantes" id="caracteres_restantes">140</span> caractere(s) restantes</div>
       <div class="sep" style="margin-top: 10px"></div>
       <div class="col-sm-6" style="text-align: center">
          <button type="button" id='anotacao_btn_cancelar' class="btn btn-warning btn-block">Cancelar</button>
