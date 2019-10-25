@@ -75,10 +75,13 @@
   color: white;
   float: right;
   cursor: pointer;
-  padding-top: 6px;
+  padding-top: 10px;
   padding-right: 6px;
 }
 
+.fa-1_5x {
+  font-size: 1.5em !important;
+}
 /* ============== TOOLTIP TEXT ================== */
 .tooltiptext {
   visibility: hidden;
