@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
   var limite = 140;
   jQuery("#anotacao_textarea").on("input", function() {
-    var caracteresDigitados = $(this).val().length;
+    var caracteresDigitados = jQuery(this).val().length;
     var caracteresRestantes = limite - caracteresDigitados;
     jQuery("#caracteres_restantes").text(caracteresRestantes);
   });
