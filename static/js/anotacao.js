@@ -3,13 +3,13 @@ jQuery(document).ready(function() {
   jQuery("#anotacao_textarea").on("input", function() {
     var caracteresDigitados = $(this).val().length;
     var caracteresRestantes = limite - caracteresDigitados;
-    $("#caracteres_restantes").text(caracteresRestantes);
+    jQuery("#caracteres_restantes").text(caracteresRestantes);
   });
 
   // ========== ABRE A CAIXA DE ANOTAÇÃO =============
   jQuery("#anotacao_btn_menu").on("click", function(e) {
     //  console.log("Anotar: ", selected_text);
-    $("#caracteres_restantes").text(limite);
+    jQuery("#caracteres_restantes").text(limite);
     if (selected_text == "") {
       alert("Selecione um texto");
       return;
