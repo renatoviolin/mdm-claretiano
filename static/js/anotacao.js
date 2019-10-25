@@ -8,14 +8,12 @@ jQuery(document).ready(function () {
 
    // ========== ABRE A CAIXA DE ANOTAÇÃO =============
    jQuery("#anotacao_btn_menu").on("click", function (e) {
-      //  console.log("Anotar: ", selected_text);
-      console.log(element_mouse_selected)
       jQuery("#caracteres_restantes").text(limite);
       if (selected_text == "") {
          alert("Selecione um texto");
          return;
       }
-      if (jQuery(element_mouse_selected).html().includes("x-anotacao-destaque")) {
+      if (jQuery(element_mouse_selected_id).html().includes("x-anotacao-destaque")) {
          alert("Apenas um comentário por parágrafo");
          return;
       }
@@ -26,7 +24,6 @@ jQuery(document).ready(function () {
          .center()
          .fadeIn(100);
       jQuery("#anotacao_textarea").focus();
-      console.log(selected_text);
    });
 
    // ========== FECHA A CAIXA DE ANOTAÇÃO =============
@@ -41,27 +38,39 @@ jQuery(document).ready(function () {
       var anotacao = jQuery("#anotacao_textarea").val();
       if (anotacao == "") return;
 
-      anotacao_html =
-         "<x-anotacao-post_it id='" +
-         jQuery(element_mouse_selected).attr("id") +
-         "' status=0><div class='anotacao_conteudo'>" +
-         anotacao +
-         "</div><div class='anotacao_excluir'><i class='fa fa-times-circle fa-1_5x' aria-hidden='true'></i></div></x-anotacao-post_it>";
-      jQuery(element_mouse_selected).before(anotacao_html);
-      var newNode = document.createElement("x-anotacao-destaque");
-      newNode.setAttribute("id", jQuery(element_mouse_selected).attr("id"));
-      range.surroundContents(newNode);
-      par = jQuery(element_mouse_selected).html();
-      id_paragrafo = jQuery(element_mouse_selected).attr("id");
-      tag_split = '<x-anotacao-destaque id="' + jQuery(element_mouse_selected).attr("id") + '">';
-      inicio = par.split(tag_split)[0].length;
-      final = par.split("</x-anotacao-destaque")[0].length - tag_split.length;
-      text_par = jQuery("p[id=" + id_paragrafo + "]")
-         .text()
-         .split(" ");
-      texto_par = "";
-      for (i = 0; i < Math.min(min_split, text_par.length); i++) texto_par += " " + text_par[i];
-      texto_par = texto_par.trim();
+      try {
+         anotacao_html =
+            "<x-anotacao-post_it id='" +
+            jQuery(element_mouse_selected_id).attr("id") +
+            "' status=0><div class='anotacao_conteudo'>" +
+            anotacao +
+            "</div><div class='anotacao_excluir'><i class='fa fa-times-circle fa-1_5x' aria-hidden='true'></i></div></x-anotacao-post_it>";
+         jQuery(element_mouse_selected_id).before(anotacao_html);
+         newNode = document.createElement("x-anotacao-destaque");
+         newNode.setAttribute("id", jQuery(element_mouse_selected_id).attr("id"));
+         range.surroundContents(newNode);
+
+         par = jQuery(element_mouse_selected).html();
+         id_paragrafo = jQuery(element_mouse_selected_id).attr("id");
+         tag_split = '<x-anotacao-destaque id="' + jQuery(element_mouse_selected_id).attr("id") + '">';
+         inicio = par.split(tag_split)[0].length;
+         final = par.split("</x-anotacao-destaque")[0].length - tag_split.length;
+         text_par = jQuery("p[id=" + id_paragrafo + "]").text().split(" ");
+         texto_par = "";
+         for (i = 0; i < Math.min(min_split, text_par.length); i++) texto_par += " " + text_par[i];
+         texto_par = texto_par.trim();
+      } catch (e) {
+         console.log(e)
+         alert('Não foi possível salvar sua anotação. Verifique o texto selecionado.')
+         jQuery("#modal").removeClass("loading");
+         jQuery("#anotacao_container").fadeOut(100);
+
+         jQuery("x-anotacao-destaque[id='" + jQuery(element_mouse_selected_id).attr("id") + "']").contents().unwrap();
+         jQuery("x-anotacao-post_it[id='" + jQuery(element_mouse_selected_id).attr("id") + "']").remove();
+         range = null;
+         selected_text = "";
+         return;
+      }
 
       jQuery
          .ajax({
@@ -174,4 +183,7 @@ jQuery(document).ready(function () {
          alert("Falha ao carregar anotações");
          jQuery("#modal").removeClass("loading");
       });
+
+
+
 });
