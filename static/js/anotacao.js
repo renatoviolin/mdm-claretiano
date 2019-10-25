@@ -49,7 +49,8 @@ jQuery(document).ready(function() {
       jQuery(element_mouse_selected).attr("id") +
       "' status=0><div class='anotacao_conteudo'>" +
       anotacao +
-      "</div><div class='anotacao_excluir'>X</div></x-anotacao-post_it>";
+      // "</div><div class='anotacao_excluir'>X</div></x-anotacao-post_it>";
+      "</div><div class='anotacao_excluir'><i class='fa fa-times-circle fa-2x' aria-hidden='true'></i></div></x-anotacao-post_it>";
     jQuery(element_mouse_selected).before(anotacao_html);
     var newNode = document.createElement("x-anotacao-destaque");
     newNode.setAttribute("id", jQuery(element_mouse_selected).attr("id"));
@@ -174,7 +175,7 @@ jQuery(document).ready(function() {
             item.id_paragrafo +
             "' status=0'><div class='anotacao_conteudo'>" +
             item.comentario +
-            "</div><div class='anotacao_excluir'>X</div></x-anotacao-post_it>"
+            "</div><div class='anotacao_excluir'><i class='fa fa-times-circle fa-2x' aria-hidden='true'></i></div></x-anotacao-post_it>"
         );
       }
       jQuery("#modal").removeClass("loading");

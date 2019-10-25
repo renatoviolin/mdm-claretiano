@@ -1,66 +1,62 @@
 /* =========== DESTAQUE DA ANOTACAO =============== */
 .anotacao_conteudo {
-   position: relative;
-   float: left;
-   width: 175px;
+  position: relative;
+  float: left;
+  width: 175px;
 }
 
 x-anotacao-post_it {
-   text-align: left;
-   clear: both;
-   position: relative;
-   float: right;
-   padding: 10px;
-   margin-right: 10px;
-   margin-left: -220px;
-   /*margin-right: 120px;*/
-   margin-bottom: 5px;
-   color: black;
-   background: rgb(251, 255, 184);
-   font-size: 13px;
-   min-height: 20px;
-   width: 220px;
-   left: 230px;
-   top: -10px;
-   border-radius: 3px;
-   -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   overflow-wrap: anywhere;
-   z-index: 0;
+  text-align: left;
+  clear: both;
+  position: relative;
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: -220px;
+  /*margin-right: 120px;*/
+  margin-bottom: 5px;
+  color: black;
+  background: rgb(251, 255, 184);
+  font-size: 13px;
+  min-height: 20px;
+  width: 220px;
+  left: 230px;
+  top: -10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  overflow-wrap: anywhere;
+  z-index: 0;
 }
 
-
 x-anotacao-destaque {
-   background: rgb(249, 255, 126);
+  background: rgb(249, 255, 126);
 }
 
 div.anotacao_excluir {
-   text-align: center;
-   background: rgb(191, 176, 13);
-   color: rgb(242, 242, 242);
-   float: right;
-   width: 20px;
-   height: 19px;
-   cursor: pointer;
-   border-radius: 30px;
+  float: right;
+  cursor: pointer;
 }
 
-div.anotacao_excluir:hover {
-   background: #c7c978;
+.anotar_caractere_restante {
+  text-align: right;
+  font-size: 12px;
+  padding-top: 3px;
+  color: gray;
 }
 
 @media only screen and (max-width: 1365px) {
-  x-anotacao-post_it  {
-  clear: none;
-  display: inline;
-  float: left;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 100%;
-  position: sticky;
+  x-anotacao-post_it {
+    clear: none;
+    display: inline;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    position: sticky;
   }
   .anotacao_conteudo {
-     width: 90% !important;
+    width: 90% !important;
   }
 }

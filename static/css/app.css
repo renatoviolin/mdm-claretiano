@@ -1,113 +1,118 @@
 /* =============== MENU LATERAL AZUL ============== */
 .menu_lateral {
-   position: fixed;
-   background-color: rgb(13, 59, 142);
-   width: 50px;
-   top: 50%;
-   right: 0px;
-   border-radius: 4px 0px 0px 4px;
-   border: solid 0px;
-   color: #f2f2f2;
-   height: auto;
-   margin-top: -120px;
-   z-index: 2000;
+  position: fixed;
+  background-color: rgb(13, 59, 142);
+  width: 50px;
+  top: 50%;
+  right: 0px;
+  border-radius: 4px 0px 0px 4px;
+  border: solid 0px;
+  color: #f2f2f2;
+  height: auto;
+  margin-top: -120px;
+  z-index: 2000;
 }
 
 .btn_menu_lateral {
-   margin: 5px;
-   text-align: center;
-   border-radius: 2px;
-   height: 40px;
-   cursor: pointer;
-   color: rgb(242, 242, 242);
-   background-color: rgb(13, 59, 142);
+  margin: 5px;
+  text-align: center;
+  border-radius: 2px;
+  height: 40px;
+  cursor: pointer;
+  color: rgb(242, 242, 242);
+  background-color: rgb(13, 59, 142);
 }
 
 .btn_menu_lateral:hover {
-   background-color: #0099f2;
+  background-color: #0099f2;
 }
-
 
 /* =============== MODAL ============== */
 .modal {
-   display: none;
-   position: fixed;
-   z-index: 1001;
-   /* background: rgba(153, 153, 153, 0.445) url('http://renato.dynu.net:8000/static/loading.gif') 50% 50% no-repeat; */
-   background: rgba(153, 153, 153, 0.445) url('static/loading.gif') 50% 50% no-repeat;
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  /* background: rgba(153, 153, 153, 0.445) url('http://renato.dynu.net:8000/static/loading.gif') 50% 50% no-repeat; */
+  background: rgba(153, 153, 153, 0.445) url("static/loading.gif") 50% 50% no-repeat;
 }
 
 .loading {
-   display: block;
+  display: block;
 }
-
 
 /* ============= FORMULÁRIOS (ANOTAÇÃO, DÚVIDAS) ========== */
 .anotacao_container,
 .duvida_container,
 .pesquisa_container,
 .dicionario_container {
-   display: none;
-   width: 400px;
-   border: solid 1px #6f6f6f;
-   position: absolute;
-   padding: 10px;
-   background: #f2f2f2;
-   border-radius: 4px;
-   z-index: 2000;
-   -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.6);
-   -moz-box-shadow:    1px 1px 9px 0px rgba(50, 50, 50, 0.6);
-   box-shadow:         1px 1px 9px 0px rgba(50, 50, 50, 0.6);
+  display: none;
+  width: 400px;
+  border: solid 1px #6f6f6f;
+  position: absolute;
+  padding: 10px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  z-index: 2000;
+  -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.6);
 }
 
 .container_header {
-   width: 100%;
-   border-radius: 2px;
-   height: 40px;
-   margin-bottom: 10px;
-   color: rgb(242, 242, 242);
-   font-size: 16px;
-   text-align: center;
-   vertical-align: middle;
-   padding: 8px;
-   background-color: rgb(13, 59, 142);
+  width: 100%;
+  border-radius: 2px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: rgb(242, 242, 242);
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  background-color: rgb(13, 59, 142);
+}
+
+.header_btn_fechar {
+  color: white;
+  float: right;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-right: 6px;
 }
 
 /* ============== TOOLTIP TEXT ================== */
 .tooltiptext {
-   visibility: hidden;
-   font-size: 12px;
-   width: 150px;
-   background-color: #2f373c;
-   color: #f2f2f2;
-   text-align: center;
-   border-radius: 4px;
-   padding: 5px;
-   z-index: 1;
-   bottom: 1%;
-   left: 50%;
-   margin-left: -165px;
-   opacity: 0;
-   transition: opacity 0.3s;
-   -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
-   float: left;
+  visibility: hidden;
+  font-size: 12px;
+  width: 150px;
+  background-color: #2f373c;
+  color: #f2f2f2;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  z-index: 1;
+  bottom: 1%;
+  left: 50%;
+  margin-left: -165px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.35);
+  float: left;
 }
 
 .tooltiptext::after {
-   content: "";
-   position: relative;
-   right: 0%;
-   border-width: 5px;
-   border-style: solid;
-   border-color: transparent #2f373c transparent transparent;
-
+  content: "";
+  position: relative;
+  right: 0%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #2f373c transparent transparent;
 }
 
 .btn_menu_lateral:hover .tooltiptext {
-   visibility: visible;
-   opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /*CUSTOMIZAR BOTÕES DOS RECURSOS*/
