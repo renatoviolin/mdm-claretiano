@@ -63,6 +63,13 @@ jQuery(document).ready(function () {
          range.setEnd(range.startContainer, range.endContainer.previousElementSibling.innerHTML.length)
       }
 
+      // se selecionou um conteúdo e a tag não é P, busca o parent para encontrar o P
+      while (element_mouse_selected.parentElement != null && element_mouse_selected.nodeName != 'P') {
+         element_mouse_selected = element_mouse_selected.parentElement;
+         if (element_mouse_selected.parentElement.nodeName != 'P')
+            break;
+      }
+
    });
 
 
