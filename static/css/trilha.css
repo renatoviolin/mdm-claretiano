@@ -4,6 +4,10 @@
   border-radius: 4px;
 }
 
+em {
+  color: #a5a5a5;
+}
+
 .anotacao_destaque {
   background: #fbffa8 !important;
 }
