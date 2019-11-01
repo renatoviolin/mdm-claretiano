@@ -17,7 +17,7 @@
   margin-right: 0px !important;
 }
 
-.menu_lateral .fa-print:hover .fa-volume-up:hover{
+.menu_lateral .fa-print:hover, .fa-volume-up:hover{
   color: #fff !important;
 }
 
