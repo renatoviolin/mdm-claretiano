@@ -1,90 +1,185 @@
 <!DOCTYPE html>
+<!-- saved from url=(0041)http://renato.dynu.net:8000/static_trilha -->
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Trilha de Aprendizagem</title>
 
-<head>
-   <title>Trilha de Aprendizagem</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}">
-   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-   <script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
+  </head>
 
-</head>
-
-<body>
-   <div class="container-fluid bg-3">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-
-         <h1> Trilha de Estudos</h1>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_01">Janeiro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_02">Fevereiro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_03">Março</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_04">Abril</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_05">Maio</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_06">Junho</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_07">Julho</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_08">Agosto</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_09">Setembro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_10">Outubro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_11">Novembro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-         <div class="extrato_container_mes">
-            <div class="mes_titulo" id="mes_12">Dezembro</div>
-            <div class="mes_inside_container"></div>
-         </div>
-
-
+  <body>
+    <div class="container_trilha">
+      <div class="header_trilha">
+        <div class="titulo_pagina"><i class="fa fa-list-alt" aria-hidden="true"></i> Trilha de Estudos</div>
+        <div class="hearder_icons"><i class="fa fa-print" aria-hidden="true"></i><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+        <div class="titulo_disciplina">Disciplina: Fundamentos do Marketing Digital</div>
       </div>
 
+      <div class="extrato_container_mes">
+        <div class="mes_titulo" id="mes_10">Outubro <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        <div class="mes_inside_container">
+          <!-- <div class="trilha_row">
+               <div class="trilha_icon_stick"><i class="fa fa-sticky-note fa-2x" aria-hidden="true"></i></div>
+               <div class="data_hor">12/10</div>
+               <div class="data">
+                  <div class="data_dia">12</div>
+                  <div class="data_mes">10</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Como primeira ação você anotou:</div>
+                  <p>Antes de iniciarmos nossos estudos em Marketing Digital, é importante conhecermos e estudarmos um
+                     pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.<a href="#">Ver
+                        anotação</a></p>
+               </div>
+            </div> -->
+        </div>
+      </div>
 
-      <div class="col-sm-2"></div>
-   </div>
+      <div class="extrato_container_mes">
+        <div class="mes_titulo" id="mes_11">Novembro <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        <div class="mes_inside_container"></div>
+      </div>
 
-</body>
+      <!-- <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="data_hor">12/10</div>
+               <div class="data">
+                  <div class="data_dia">12</div>
+                  <div class="data_mes">10</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">...e depois anotou:</div>
+                  <p>Marketing Digital, é importante conhecermos e estudarmos um pouco sobre o que é Marketing e qual a
+                     sua importância na vida dos consumidores Marketing Digital, é importante conhecermos e estudarmos
+                     um pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.<a href="#">Ver
+                        anotação</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
 
-<script type='text/javascript'>
-   $(document).ready(function () {
-      gerar_trilha('{{ra_aluno}}', '{{pagina}}')
-      $('.mes_titulo').on('click', function (e) {
-         $(e.target).next().slideToggle('slow')
-      })
-   })
-</script>
+      <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="trilha_icon_search fa-2x"><i class="fa fa-search" aria-hidden="true"></i></div>
+               <div class="data_hor">13/10</div>
+               <div class="data">
+                  <div class="data_dia">13</div>
+                  <div class="data_mes">10</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Nessa parte você pesquisou:</div>
+                  <p>Portanto, é importante saber que o Marketing Digital, é importante conhecermos e estudarmos um
+                     pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.<a href="#">Ver
+                        resultado</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
 
+      <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="trilha_icon_dicio"><i class="fa fa-book fa-2x" aria-hidden="true"></i></div>
+               <div class="data_hor">13/10</div>
+               <div class="data">
+                  <div class="data_dia">13</div>
+                  <div class="data_mes">10</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Com ajuda do dicionário, você procurou esse termo:</div>
+                  <p><b>"Marketing"</b> <br><em>E o resultado apresentado foi</em>: "Marketing: é importante conhecermos
+                     e estudarmos um pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores. E
+                     o resultado apresentado foi:
+                     Marketing: "é importante conhecermos e estudarmos um pouco sobre o que é Marketing e qual a sua
+                     importância na vida dos consumidores."<a href="#">Ver definição</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="trilha_icon_duvida"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></div>
+               <div class="data_hor">14/10</div>
+               <div class="data">
+                  <div class="data_dia">14</div>
+                  <div class="data_mes">10</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Você enviou uma dúvida sobre esse trecho:</div>
+                  <p>Contabilidade é importante conhecermos e estudarmos um pouco sobre o que é Marketing e qual...<br>
+                     <b>E teve essa resposta:</b> é importante saber que o Marketing Digital, é importante conhecermos e
+                     estudarmos um pouco sobre o que é
+                     Marketing e qual a sua importância na vida.<a href="#">Verificar no correio</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_titulo" id="mes_10">Novembro <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="trilha_icon_stick"><i class="fa fa-sticky-note fa-2x" aria-hidden="true"></i></div>
+               <div class="data_hor">05/11</div>
+               <div class="data">
+                  <div class="data_dia">05</div>
+                  <div class="data_mes">11</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Você anotou também:</div>
+                  <p>Antes de iniciarmos nossos estudos em Marketing Digital, é importante conhecermos e estudarmos um
+                     pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.<a href="#">Ver
+                        anotação</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="extrato_container_mes" style="display: block;">
+         <div class="mes_inside_container">
+            <div class="trilha_row">
+               <div class="trilha_icon_duvida"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></div>
+               <div class="data_hor">06/11</div>
+               <div class="data">
+                  <div class="data_dia">06</div>
+                  <div class="data_mes">11</div>
+               </div>
+               <div class="trilha_texto">
+                  <div class="header_trilha_box">Você enviou uma dúvida sobre esse trecho:</div>
+                  <p>Contabilidade é importante conhecermos e estudarmos um pouco sobre o que é Marketing e qual...<br>
+                     <b>E teve essa resposta:</b> é importante saber que o Marketing Digital, é importante conhecermos e
+                     estudarmos um pouco sobre o que é
+                     Marketing e qual a sua importância na vida.<a href="#">Verificar no correio</a></p>
+               </div>
+            </div>
+         </div>
+      </div> -->
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      gerar_trilha("{{ra_aluno}}", "{{pagina}}");
+      $(".mes_titulo").on("click", function(e) {
+        $(e.target)
+          .next()
+          .slideToggle("slow");
+      });
+    });
+  </script>
 </html>

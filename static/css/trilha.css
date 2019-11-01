@@ -1,89 +1,272 @@
-div.extrato_container {
-   border: solid 1px rgb(200, 200, 200);
-   width: 100%;
-   margin-bottom: 20px;
-   background: rgb(244, 244, 244);
-   padding: 10px;
-   border-radius: 4px;
+#ver_detalhe {
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-div.extrato_content {
-   max-height: 400px;
-   overflow-y: auto;
+.anotacao_destaque {
+  background: #fbffa8 !important;
 }
 
-div.extrato_header {
-   background: rgb(13, 59, 142);
-   color: rgb(242, 242, 242);
-   height: 30px;
-   line-height: 30px;
-   padding-left: 5px;
-   font-size: 16px;
-   margin: -10px;
-   margin-bottom: 10px;
+.pesquisa_destaque {
+  background: #deeeff !important;
+}
+
+.dicionario_destaque {
+  background: #e1fcd7 !important;
+}
+
+.duvida_destaque {
+  background: #f6deff !important;
+  color: #000;
+}
+
+.extrato_container_mes {
+  display: none;
+}
+
+/* FORMATAÇÃO DOS CONTAINERS E ROWS */
+.container_trilha {
+  width: 1020px;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  vertical-align: top;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+}
+
+.trilha_row {
+  margin-left: 10px;
+  border-left: dotted 2px #d1d1d1;
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+/* FORMATAÇÃO DOS TEXTOS E TITULOS*/
+.trilha_texto {
+  padding: 10px;
+  position: relative;
+  float: left;
+  width: 90%;
+  margin-top: -43px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header_trilha_box {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0099f2;
+}
+
+.mes_titulo {
+  background-color: #fff;
+  font-size: 16px;
+  border-bottom: solid 1px;
+  display: block;
+  color: #0099f2;
+  cursor: pointer;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.mes_titulo:hover {
+  color: #027ec6;
+}
+
+.titulo_pagina {
+  font-size: 24px;
+  width: 90%;
+  background-color: #0d3b8e;
+  padding: 10px 10px 10px 20px;
+  color: #fff;
+  float: left;
+  clear: both;
+  margin-bottom: 2px;
+}
+
+.titulo_disciplina {
+  font-size: 14px;
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* FORMATAÇÃO DOS ICONES */
+.trilha_icon_stick,
+.trilha_icon_search,
+.trilha_icon_dicio,
+.trilha_icon_duvida {
+  float: left;
+  width: 5%;
+  position: relative;
+  text-align: left;
+  color: #e9e954;
+  clear: both;
+  left: -12px;
+  cursor: pointer;
+  height: 100%;
+  background-color: #fff;
+}
+
+.trilha_icon_search {
+  color: #0d3b8e;
+}
+
+.trilha_icon_dicio {
+  color: #0a780a;
+}
+
+.trilha_icon_duvida {
+  color: #962bbc;
+}
+
+.hearder_icons {
+  font-size: 24px;
+  width: 10%;
+  float: left;
+  background-color: #0d3b8e;
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-print:hover,
+.fa-volume-up:hover {
+  color: #0099f2;
+}
+
+.fa-print {
+  margin-right: 20px;
+}
+
+/* FORMATAÇÃO DAS DATAS */
+.data {
+  color: #d1d1d1;
+  width: 5%;
+  float: left;
+  text-align: center;
+  font-weight: 200;
+  font-stretch: ultra-expanded;
+  font-family: Impact, Charcoal, sans-serif;
+  padding: 10px 0px 10px 10px;
+  clear: both;
+  margin: -45px 5px 20px 25px;
 }
 
 p.data {
-   color: rgb(13, 59, 142);
-   font-size: 12px;
-   margin-bottom: -1px;
-   padding-top: 5px;
-   width: 100%;
-   /* text-align: center */
+  color: rgb(13, 59, 142);
+  margin-bottom: -1px;
+  padding-top: 5px;
+  width: 100%;
 }
 
-.trilha_pesquisa,
-.trilha_definicao,
-.trilha_anotacao,
-.trilha_importante,
-.trilha_dificil,
-.trilha_mentor {
-   margin-top: 5px;
-   background-color: #ddf4c3;
-   padding: 5px;
-   border-radius: 4px;
+.data_dia {
+  font-size: 24px;
+  border-bottom: solid 1px #d1d1d1;
 }
 
-.trilha_definicao {
-   background-color: #ddf4c3;
-
+.data_mes {
+  font-size: 24px;
 }
 
-.trilha_pesquisa {
-   background-color: #c3eaf4;
-
+.data_hor {
+  visibility: hidden;
 }
 
-.trilha_anotacao {
-   background-color: #fffe71;
+/* RESPONSIVEL */
+@media only screen and (max-width: 1024px) {
+  .container_trilha {
+    width: 100%;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .data {
+    visibility: hidden;
+  }
+
+  .data_hor {
+    visibility: visible;
+    color: #d1d1d1;
+    text-align: left;
+    padding: 10px 0px 10px 30px;
+    margin: 0px 5px 0px 0px;
+    font-size: 16px;
+    font-family: Impact, Charcoal, sans-serif;
+    display: block;
+    margin-top: -10px;
+  }
+
+  .trilha_texto {
+    padding: 10px;
+    position: relative;
+    float: left;
+    margin-top: -85px;
+    margin-left: 20px;
+  }
+
+  .trilha_icon_stick,
+  .trilha_icon_search,
+  .trilha_icon_dicio,
+  .trilha_icon_duvida {
+    left: -12px;
+    clear: both;
+  }
+
+  .fa-caret-down {
+    text-align: right;
+  }
+
+  .titulo_pagina {
+    width: 75%;
+  }
+
+  .hearder_icons {
+    width: 20%;
+    margin-right: 5px;
+  }
 }
 
-/*.trilha_duvida {
-   background-color: #c9ecf1;
-}*/
+/* VERSÃO PARA IMPRESSÃO */
+@media print {
+  .hearder_icons {
+    display: none;
+  }
 
-.arrow {
-   height: 40px;
+  .titulo_pagina {
+    margin-left: -20px;
+  }
 }
 
-div.header_trilha_box {
-   width: 100%;
-   font-size: 16px;
-   text-align: center;
-   font-weight: bold;
-   color: rgb(13, 59, 142);
-}
-
-
-div.extrato_container_mes {
-   padding-top: 20px;
-   display: none;
-}
-div.mes_titulo {
-   font-size: 18px;
-   margin-left: -60px;
-   border-bottom: solid 1px;
-   display: block;
-   color: rgb(13, 59, 142);
-   cursor: pointer;
-}
+/* .extrato_container {
+  border: solid 1px rgb(200, 200, 200);
+  max-width: 1020px;
+  margin-bottom: 20px;
+  background: rgb(244, 244, 244);
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+} */
+/* div.extrato_content {
+  max-height: 400px;
+  overflow-y: auto;
+} */
+/* div.extrato_header {
+  background: rgb(13, 59, 142);
+  color: rgb(242, 242, 242);
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  font-size: 16px;
+  margin: -10px;
+  margin-bottom: 10px;
+  
+} */
