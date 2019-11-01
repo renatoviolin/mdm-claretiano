@@ -9,7 +9,7 @@ var pagina_atual = "";
 var ra_aluno = 1;
 var range;
 var min_split = 10;
-var BASE_URL = 'http://renato.dynu.net:8000'
+var BASE_URL = "http://renato.dynu.net:8000";
 // var BASE_URL = "";
 
 jQuery(document).ready(function() {
@@ -35,9 +35,10 @@ jQuery(document).ready(function() {
   };
 
   // ra_aluno = prompt("Digite seu RA", "1");
-  _pag = window.location.href.split("/");
-  pagina_atual = _pag[_pag.length - 2];
-
+  // _pag = window.location.href.split("/");
+  // pagina_atual = _pag[_pag.length - 2];
+  pagina_atual = window.location.href;
+  
   jQuery(document).on("mousedown", function(e) {
     pageX = e.pageX;
     pageY = e.pageY;

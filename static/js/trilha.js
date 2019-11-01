@@ -1,16 +1,13 @@
 jQuery(document).ready(function() {
-  jQuery("#trilha_btn_menu").on("click", function() {
-    jQuery("#form_ra_aluno").val(ra_aluno);
-    jQuery("#form_pagina").val(pagina_atual);
-    jQuery("form").attr("action", "/static_trilha");
-    jQuery("form").submit();
-  });
+  // jQuery("#trilha_btn_menu").on("click", function() {
+  //   jQuery("#form_ra_aluno").val(ra_aluno);
+  //   jQuery("#form_pagina").val(pagina_atual);
+  //   jQuery("form").attr("action", "/static_trilha");
+  //   jQuery("form").submit();
+  // });
 
-  jQuery("#trilha_btn_menu2").on("click", function() {
-    jQuery("#form_ra_aluno").val(ra_aluno);
-    jQuery("#form_pagina").val(pagina_atual);
-    jQuery("form").attr("action", "/static_trilha2");
-    jQuery("form").submit();
+  jQuery("#trilha_btn_menu").on("click", function() {
+    window.open("http://renato.dynu.net:8000/static/static_trilha.html", "_blank");
   });
 });
 function revelar(e) {
