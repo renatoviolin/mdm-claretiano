@@ -18,7 +18,7 @@
 }
 
 .menu_lateral .fa-print:hover .fa-volume-up:hover{
-  color: #fff;
+  color: #fff !important;
 }
 
 
