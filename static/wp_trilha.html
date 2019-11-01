@@ -7,16 +7,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}" />
+    <link rel="stylesheet" href="http://renato.dynu.net:8000/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://renato.dynu.net:8000/static/css/trilha.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
+    <script type="text/javascript" src="http://renato.dynu.net:8000/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://renato.dynu.net:8000/static/js/trilha.js"></script>
   </head>
 
   <body>
@@ -79,7 +79,7 @@
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
-      gerar_trilha("{{ra_aluno}}", "{{pagina}}");
+      gerar_trilha("1", "http://mdm.claretiano.edu.br/matdid-0000-2020-01-grad-ead/2017/03/17/ciclo1/");
       $(".mes_titulo").on("click", function(e) {
         $(e.target)
           .next()
