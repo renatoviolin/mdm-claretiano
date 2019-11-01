@@ -152,6 +152,10 @@ em.trilha {
   margin-right: 20px;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* FORMATAÇÃO DAS DATAS */
 .data {
   color: #d1d1d1;
