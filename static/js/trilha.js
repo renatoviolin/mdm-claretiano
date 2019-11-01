@@ -51,7 +51,6 @@ function gerar_trilha(ra_aluno, pagina) {
           for (i = 0; i < resultados.length; i++) {
             links += `<a href="${resultados[i]}">${resultados[i]}</a><br>`;
           }
-          console.log(links);
 
           texto_html = `
                <div class="trilha_row">
@@ -63,7 +62,7 @@ function gerar_trilha(ra_aluno, pagina) {
                   </div>
                   <div class="trilha_texto">
                      <div class="header_trilha_box">Na internet</div>
-                     <p>você pesquisou por <em>${conteudo}</em> e obteve os <a href="#" onClick="revelar(this)">links</a></p>
+                     <p>você pesquisou por <em class='trilha'>${conteudo}</em> e obteve os <a href="#" onClick="revelar(this)">links</a></p>
                      <div id='ver_detalhe' class='pesquisa_destaque'>${links}</div>
                   </div>
                </div>
@@ -82,7 +81,7 @@ function gerar_trilha(ra_aluno, pagina) {
                   </div>
                   <div class="trilha_texto">
                      <div class="header_trilha_box">No dicionário</div>
-                     <p>você procurou pelo termo <em>${conteudo}</em>, e obteve a seguinte <a href="#" onClick="revelar(this)">definição</a></p>
+                     <p>você procurou pelo termo <em class='trilha'>${conteudo}</em>, e obteve a seguinte <a href="#" onClick="revelar(this)">definição</a></p>
                      <div id='ver_detalhe' class='dicionario_destaque'>${resultado}</div>
                      </div>
                </div>
@@ -101,7 +100,7 @@ function gerar_trilha(ra_aluno, pagina) {
                   </div>
                   <div class="trilha_texto">
                      <div class="header_trilha_box">Você anotou</div>
-                     <p><em>${conteudo}</em>, <a href="#" onClick="revelar(this)">no trecho</a></p>
+                     <p><em class='trilha'>${conteudo}</em>, <a href="#" onClick="revelar(this)">no trecho</a></p>
                      <div id='ver_detalhe' class='anotacao_destaque'>${texto_par}</div>
                   </div>
                </div>
@@ -120,7 +119,7 @@ function gerar_trilha(ra_aluno, pagina) {
                   </div>
                   <div class="trilha_texto">
                      <div class="header_trilha_box">Você enviou a dúvida</div>
-                     <p><em>${titulo}</em> <a href="#" onClick="revelar(this)">ver</a></p>
+                     <p><em class='trilha'>${titulo}</em> <a href="#" onClick="revelar(this)">ver</a></p>
                      <div id='ver_detalhe' class='duvida_destaque'>${conteudo}</div>
 
                   </div>
