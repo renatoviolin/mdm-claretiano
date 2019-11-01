@@ -253,6 +253,10 @@ p.data {
   .titulo_pagina {
     margin-left: -20px;
   }
+
+  #ver_detalhe {
+    display: block;
+  }
 }
 
 /* .extrato_container {
