@@ -1,11 +1,11 @@
 jQuery(document).ready(function() {
 
   jQuery("#trilha_btn_menu").on("click", function() {
-    jQuery("#form_ra_aluno").val(ra_aluno);
-    jQuery("#form_pagina").val(pagina_atual);
-    jQuery("form").attr("action", "/static_trilha");
-    jQuery("form").submit();
-    // window.open("http://renato.dynu.net:8000/static/wp_trilha.html", "_blank");
+    // jQuery("#form_ra_aluno").val(ra_aluno);
+    // jQuery("#form_pagina").val(pagina_atual);
+    // jQuery("form").attr("action", "/static_trilha");
+    // jQuery("form").submit();
+    window.open("http://renato.dynu.net:8000/static/wp_trilha.html", "_blank");
   });
 });
 function revelar(e) {
