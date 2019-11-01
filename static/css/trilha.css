@@ -154,7 +154,7 @@ em.trilha {
 
 a {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* FORMATAÇÃO DAS DATAS */
