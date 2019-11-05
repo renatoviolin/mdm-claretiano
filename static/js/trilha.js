@@ -1,10 +1,9 @@
 jQuery(document).ready(function() {
-
-  jQuery("#trilha_btn_menu").on("click", function() {
-    // jQuery("#form_ra_aluno").val(ra_aluno);
-    // jQuery("#form_pagina").val(pagina_atual);
-    // jQuery("form").attr("action", "/static_trilha");
-    // jQuery("form").submit();
+  // jQuery("#trilha_btn_menu").on("click", function() {
+  //   jQuery("#form_ra_aluno").val(ra_aluno);
+  //   jQuery("#form_pagina").val(pagina_atual);
+  //   jQuery("form").attr("action", "/static_trilha");
+  //   jQuery("form").submit();
     window.open("http://renato.dynu.net:8000/static/wp_trilha.html", "_blank");
   });
 });
@@ -29,24 +28,23 @@ function gerar_trilha(ra_aluno, pagina) {
     })
     .done(function(data_json) {
       console.log(data_json);
-      mes_aux = data_json[0].date.split("/")[1];
 
       for (j = 0; j < data_json.length; j++) {
-        conteudo = data_json[j].conteudo;
-        resposta = data_json[j].resposta;
-        titulo = data_json[j].titulo;
         date = data_json[j].date;
-        mes = date.split("/")[1];
-        texto_par = data_json[j].texto_par;
-        resultado = data_json[j].resultado;
-        tipo = data_json[j].tipo; // 1 pesquisa 2 definicao 3 anotacao 4 importante 5 dificil
+        tipo = data_json[j].tipo;
+        c2 = data_json[j].c2;
+        c3 = data_json[j].c3;
+        c4 = data_json[j].c4;
+        c5 = data_json[j].c5;
+
         dia = date.split("/")[0];
         mes = date.split("/")[1];
 
         texto_html = "";
         if (tipo == 1) {
           // PESQUISAS
-          resultados = resultado.split("\n");
+          conteudo = c2;
+          resultados = c3.split(",");
           links = "";
           for (i = 0; i < resultados.length; i++) {
             links += `<a href="${resultados[i]}">${resultados[i]}</a><br>`;
@@ -71,6 +69,8 @@ function gerar_trilha(ra_aluno, pagina) {
 
         if (tipo == 2) {
           // DICIONÁRIO
+          conteudo = c2;
+          resultado = c3;
           texto_html = `
                <div class="trilha_row">
                   <div class="trilha_icon_dicio"><i class="fa fa-book fa-2x" aria-hidden="true"></i></div>
@@ -90,6 +90,8 @@ function gerar_trilha(ra_aluno, pagina) {
 
         if (tipo == 3) {
           // ANOTAÇÃO
+          conteudo = c2;
+          texto_par = c3;
           texto_html = `
                <div class="trilha_row">
                   <div class="trilha_icon_stick"><i class="fa fa-sticky-note fa-2x" aria-hidden="true"></i></div>

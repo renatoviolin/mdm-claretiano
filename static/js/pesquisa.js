@@ -1,8 +1,12 @@
+var log_selected_text = "";
+var texto_busca_processado = "";
+var id_pesquisa;
+
 jQuery(document).ready(function() {
   // ----------- FAZER A PESQUISA E MOSTRAR O RESULTADO ------------------
   jQuery("#pesquisa_btn_menu").on("click", function(e) {
     if (selected_text == "") return;
-    console.log(selected_text);
+    log_selected_text = selected_text;
     jQuery
       .ajax({
         url: BASE_URL + "/api_search",
@@ -19,11 +23,12 @@ jQuery(document).ready(function() {
         }
       })
       .done(function(jsondata) {
-        console.log(jsondata);
-        response = jsondata;
+        id_pesquisa = jsondata.id_pesquisa;
+        response = jsondata.response;
+        console.log(id_pesquisa);
         h = "";
         for (i = 0; i < response.length; i++) {
-          h += '<a href="' + response[i].link + '"target="_blank"><span class="titulo">' + response[i].title + "</span></a><br>";
+          h += '<a href="' + response[i].link + '"target="_blank" class="pesquisa_link"><span class="titulo">' + response[i].title + "</span></a><br>";
           h += '<p class="link">' + response[i].link + "</p>";
         }
         jQuery("#modal").removeClass("loading");
@@ -44,5 +49,26 @@ jQuery(document).ready(function() {
     jQuery("#modal").removeClass("loading");
     jQuery("#pesquisa_container").fadeOut(100);
     selected_text = "";
+  });
+
+  // ----------------- LOGAR OS CLICKS NOS LINKS ----------------------
+  jQuery(document).on("click", ".pesquisa_link", function(e) {
+    link_clicado = e.currentTarget.href;
+    jQuery
+      .ajax({
+        url: BASE_URL + "/api_update_log_link_pesquisa",
+        type: "post",
+        contentType: "application/json",
+        dataType: "json",
+        data: JSON.stringify({
+          ra_aluno: ra_aluno,
+          pagina: pagina_atual,
+          id_pesquisa: id_pesquisa,
+          link_clicado: link_clicado
+        })
+      })
+      .fail(function(jqXHR, textStatus, jsondata) {
+        console.log(jqXHR);
+      });
   });
 });
