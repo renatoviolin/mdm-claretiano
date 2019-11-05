@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
-  // jQuery("#trilha_btn_menu").on("click", function() {
-  //   jQuery("#form_ra_aluno").val(ra_aluno);
-  //   jQuery("#form_pagina").val(pagina_atual);
-  //   jQuery("form").attr("action", "/static_trilha");
-  //   jQuery("form").submit();
+  jQuery("#trilha_btn_menu").on("click", function() {
+    // jQuery("#form_ra_aluno").val(ra_aluno);
+    // jQuery("#form_pagina").val(pagina_atual);
+    // jQuery("form").attr("action", "/static_trilha");
+    // jQuery("form").submit();
     window.open("http://renato.dynu.net:8000/static/wp_trilha.html", "_blank");
   });
 });
@@ -91,7 +91,7 @@ function gerar_trilha(ra_aluno, pagina) {
         if (tipo == 3) {
           // ANOTAÇÃO
           conteudo = c2;
-          texto_par = c3;
+          texto_par = c3          
           texto_html = `
                <div class="trilha_row">
                   <div class="trilha_icon_stick"><i class="fa fa-sticky-note fa-2x" aria-hidden="true"></i></div>
