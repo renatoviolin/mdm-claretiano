@@ -2,8 +2,9 @@ var log_selected_text = "";
 var texto_busca_processado = "";
 var id_pesquisa;
 
+
 jQuery(document).ready(function() {
-  // ----------- FAZER A PESQUISA E MOSTRAR O RESULTADO ------------------
+  // ----------- FAZER A PESQUISA E MOSTRAR O RESULTADO -----------------------
   jQuery("#pesquisa_btn_menu").on("click", function(e) {
     if (selected_text == "") return;
     log_selected_text = selected_text;
