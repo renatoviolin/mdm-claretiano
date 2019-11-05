@@ -4,6 +4,7 @@ var id_pesquisa;
 
 
 jQuery(document).ready(function() {
+  alert('teste')
   // ----------- FAZER A PESQUISA E MOSTRAR O RESULTADO -----------------------
   jQuery("#pesquisa_btn_menu").on("click", function(e) {
     if (selected_text == "") return;
