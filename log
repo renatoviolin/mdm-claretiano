@@ -1,0 +1,85 @@
+05-Nov-19 09:29:24 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 09:29:24 - Initiated a keyword detector instance.
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+05-Nov-19 09:29:24 -  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+05-Nov-19 09:29:24 -  * Restarting with stat
+05-Nov-19 09:29:36 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 09:29:36 - Initiated a keyword detector instance.
+05-Nov-19 09:29:36 -  * Debugger is active!
+05-Nov-19 09:29:37 -  * Debugger PIN: 319-966-330
+05-Nov-19 09:46:48 - 131.100.156.130 - - [05/Nov/2019 09:46:48] "[37mOPTIONS /api_get_notes HTTP/1.1[0m" 200 -
+05-Nov-19 09:46:48 - 131.100.156.130 - - [05/Nov/2019 09:46:48] "[37mPOST /api_get_notes HTTP/1.1[0m" 200 -
+05-Nov-19 09:47:02 - 187.72.137.60 - - [05/Nov/2019 09:47:02] "[37mOPTIONS /api_get_notes HTTP/1.1[0m" 200 -
+05-Nov-19 09:47:02 - 187.72.137.60 - - [05/Nov/2019 09:47:02] "[37mPOST /api_get_notes HTTP/1.1[0m" 200 -
+05-Nov-19 09:54:17 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 09:54:18 -  * Restarting with stat
+05-Nov-19 09:54:21 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 09:54:21 - Initiated a keyword detector instance.
+05-Nov-19 09:54:21 -  * Debugger is active!
+05-Nov-19 09:54:21 -  * Debugger PIN: 319-966-330
+05-Nov-19 09:54:32 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 09:54:32 -  * Restarting with stat
+05-Nov-19 09:54:35 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 09:54:35 - Initiated a keyword detector instance.
+05-Nov-19 09:54:35 -  * Debugger is active!
+05-Nov-19 09:54:35 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:03:01 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:03:02 -  * Restarting with stat
+05-Nov-19 10:03:04 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:03:04 - Initiated a keyword detector instance.
+05-Nov-19 10:03:04 -  * Debugger is active!
+05-Nov-19 10:03:04 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:03:14 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:03:14 -  * Restarting with stat
+05-Nov-19 10:03:16 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:03:16 - Initiated a keyword detector instance.
+05-Nov-19 10:03:16 -  * Debugger is active!
+05-Nov-19 10:03:16 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:03:44 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:03:44 -  * Restarting with stat
+05-Nov-19 10:03:46 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:03:46 - Initiated a keyword detector instance.
+05-Nov-19 10:03:47 -  * Debugger is active!
+05-Nov-19 10:03:47 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:03:52 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:03:52 -  * Restarting with stat
+05-Nov-19 10:03:54 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:03:54 - Initiated a keyword detector instance.
+05-Nov-19 10:03:54 -  * Debugger is active!
+05-Nov-19 10:03:54 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:04:12 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:04:12 -  * Restarting with stat
+05-Nov-19 10:04:15 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:04:15 - Initiated a keyword detector instance.
+05-Nov-19 10:04:15 -  * Debugger is active!
+05-Nov-19 10:04:15 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:04:20 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
+05-Nov-19 10:04:20 -  * Restarting with stat
+05-Nov-19 10:04:22 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:04:22 - Initiated a keyword detector instance.
+05-Nov-19 10:04:23 -  * Debugger is active!
+05-Nov-19 10:04:23 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:08:08 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
+05-Nov-19 10:08:08 -  * Restarting with stat
+05-Nov-19 10:08:11 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:08:11 - Initiated a keyword detector instance.
+05-Nov-19 10:08:11 -  * Debugger is active!
+05-Nov-19 10:08:11 -  * Debugger PIN: 319-966-330
+05-Nov-19 10:08:49 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
+05-Nov-19 10:08:49 -  * Restarting with stat
+05-Nov-19 10:08:51 - 'pattern' package not found; tag filters are not available for English
+05-Nov-19 10:08:51 - Initiated a keyword detector instance.
+Traceback (most recent call last):
+  File "/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py", line 177, in <module>
+    @app.route('/api_insert_note', methods=["POST"])
+  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 1314, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 98, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 1283, in add_url_rule
+    "existing endpoint function: %s" % endpoint
+AssertionError: View function mapping is overwriting an existing endpoint function: insert_note

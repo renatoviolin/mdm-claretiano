@@ -28,8 +28,9 @@ jQuery(document).ready(function() {
         console.log(id_pesquisa);
         h = "";
         for (i = 0; i < response.length; i++) {
-          h += '<a href="' + response[i].link + '"target="_blank" class="pesquisa_link"><span class="titulo">' + response[i].title + "</span></a><br>";
-          h += '<p class="link">' + response[i].link + "</p>";
+          h += '<div><a href="' + response[i].link + '"target="_blank" class="pesquisa_link"><span class="titulo">' + response[i].title + "</span></a><br>";
+          h += '<p class="link">' + response[i].link + "</p></div>";
+          h += '<div class="pesquisa_util">Util</div>';
         }
         jQuery("#modal").removeClass("loading");
         jQuery("#pesquisa_conteudo").html(h);
@@ -54,6 +55,8 @@ jQuery(document).ready(function() {
   // ----------------- LOGAR OS CLICKS NOS LINKS ----------------------
   jQuery(document).on("click", ".pesquisa_link", function(e) {
     link_clicado = e.currentTarget.href;
+    console.log(link_clicado);
+
     jQuery
       .ajax({
         url: BASE_URL + "/api_update_log_link_pesquisa",
@@ -70,5 +73,28 @@ jQuery(document).ready(function() {
       .fail(function(jqXHR, textStatus, jsondata) {
         console.log(jqXHR);
       });
+  });
+
+  // ------ MARCAR LINK DA PESQUISA COMO UTIL ------------------
+  jQuery(document).on("click", ".pesquisa_util", function(e) {
+    link_tag = e.currentTarget;
+    link_clicado = link_tag.previousSibling.childNodes[0].href;
+    jQuery
+      .ajax({
+        url: BASE_URL + "/api_update_log_link_like",
+        type: "post",
+        contentType: "application/json",
+        dataType: "json",
+        data: JSON.stringify({
+          ra_aluno: ra_aluno,
+          pagina: pagina_atual,
+          id_pesquisa: id_pesquisa,
+          link: link_clicado
+        })
+      })
+      .fail(function(jqXHR, textStatus, jsondata) {
+        console.log(jqXHR);
+      });
+    jQuery(link_tag).toggle();
   });
 });

@@ -7,3 +7,15 @@
   color: rgb(104, 104, 104);
   font-size: 11px;
 }
+
+.pesquisa_util {
+  font-size: 11px;
+  color: rgb(13, 59, 142);
+  float: right;
+  margin-top: -25px;
+  display: block;
+}
+
+.pesquisa_util:hover {
+  cursor: pointer;
+}
