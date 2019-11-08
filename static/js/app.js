@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 
     jQuery("iframe").each(function() {
       //Using closures to capture each one
-      var iframe = $(this);
+      var iframe = jQuery(this);
       console.log(iframe)
       iframe.on("load", function() {
         //Make sure it is fully loaded
