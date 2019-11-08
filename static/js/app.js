@@ -74,6 +74,9 @@ jQuery(document).ready(function() {
   });
 
   function logar_link_clicado(texto, link) {
+    alert(ra_aluno)
+    alert(pagina_atual)
+    alert(texto)
     alert(link)
     console.log('logar')
     jQuery
