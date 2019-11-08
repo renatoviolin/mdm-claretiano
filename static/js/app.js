@@ -10,7 +10,7 @@ var ra_aluno = 1;
 var range;
 var min_split = 10;
 var BASE_URL = "http://renato.dynu.net:8000";
-// var BASE_URL = "";
+// var BASE_URL = "";  
 
 jQuery(document).ready(function() {
   jQuery.fn.center = function() {
