@@ -36,7 +36,7 @@ function gerar_trilha(ra_aluno, pagina) {
         c3 = data_json[j].c3;
         c4 = data_json[j].c4;
         c5 = data_json[j].c5;
-
+        console.log(date)
         dia = date.split("/")[0];
         mes = date.split("/")[1];
 
@@ -91,7 +91,7 @@ function gerar_trilha(ra_aluno, pagina) {
         if (tipo == 3) {
           // ANOTAÇÃO
           conteudo = c2;
-          texto_par = c3          
+          texto_par = c3;
           texto_html = `
                <div class="trilha_row">
                   <div class="trilha_icon_stick"><i class="fa fa-sticky-note fa-2x" aria-hidden="true"></i></div>
@@ -124,6 +124,25 @@ function gerar_trilha(ra_aluno, pagina) {
                      <p><em class='trilha'>${titulo}</em> <a onClick="revelar(this)">ver</a></p>
                      <div id='ver_detalhe' class='duvida_destaque'>${conteudo}</div>
 
+                  </div>
+               </div>
+               `;
+        }
+
+        if (tipo == 5) {
+          // LINK EXTERNO
+          link = c2;
+          texto_html = `
+               <div class="trilha_row">
+                  <div class="trilha_icon_search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+                  <div class="data_hor">${dia}/${mes}</div>
+                  <div class="data">
+                     <div class="data_dia">${dia}</div>
+                     <div class="data_mes">${mes}</div>
+                  </div>
+                  <div class="trilha_texto">
+                     <div class="header_trilha_box">Durante seus estudos</div>
+                     <p>você acessou o link <em class='trilha'><a href="${link}">${link}</a></em> </p>                    
                   </div>
                </div>
                `;

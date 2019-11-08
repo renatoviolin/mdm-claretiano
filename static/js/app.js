@@ -11,7 +11,7 @@ var range;
 var min_split = 10;
 var BASE_URL = "http://renato.dynu.net:8000";
 // var BASE_URL = "";
-var link
+var link;
 jQuery(document).ready(function() {
   jQuery.fn.center = function() {
     this.css("position", "absolute");
