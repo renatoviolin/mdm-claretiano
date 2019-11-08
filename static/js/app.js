@@ -91,6 +91,8 @@ jQuery(document).ready(function() {
       })
       .fail(function(jqXHR, textStatus, jsondata) {
         console.log(jqXHR);
+        console.log(textStatus);
+        console.log(jsondata);
       });
   }
 
