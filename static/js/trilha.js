@@ -111,6 +111,8 @@ function gerar_trilha(ra_aluno, pagina) {
 
         if (tipo == 4) {
           // Dúvida
+          titulo = c2
+          conteudo = c3
           texto_html = `
                <div class="trilha_row">
                <div class="trilha_icon_duvida"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></div>
