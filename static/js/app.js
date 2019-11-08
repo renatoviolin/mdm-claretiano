@@ -74,6 +74,8 @@ jQuery(document).ready(function() {
   });
 
   function logar_link_clicado(texto, link) {
+    alert('logar')
+    console.log('logar')
     jQuery
       .ajax({
         url: BASE_URL + "/api_insert_log_link_clicado",
@@ -110,7 +112,8 @@ jQuery(document).ready(function() {
       });
   }
 
-  jQuery("a").on("click", function(e) {
+  jQuery(document).on("click", "a", function(e) {
+    console.log(e)
     link = jQuery(e.currentTarget).attr("href");
     logar_link_clicado("", link);
   });
