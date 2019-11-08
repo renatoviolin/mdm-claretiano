@@ -20,6 +20,22 @@ jQuery(document).ready(function() {
     return this;
   };
 
+    jQuery("iframe").each(function() {
+      //Using closures to capture each one
+      var iframe = $(this);
+      console.log(iframe)
+      iframe.on("load", function() {
+        //Make sure it is fully loaded
+        iframe.contents().click(function(event) {
+          iframe.trigger("click");
+        });
+      });
+
+      iframe.click(function() {
+        alert("cliclou");
+      });
+    });
+
   if (!window.x) x = {};
   x.Selector = {};
   x.Selector.getSelected = function() {
@@ -121,7 +137,8 @@ jQuery(document).ready(function() {
   });
   
   jQuery(document).on("click", "iframe", function(e) {
-    link = jQuery(e.currentTarget).attr("sec");
+    alert('Iframe')
+    link = jQuery(e.currentTarget).attr("src");
     logar_link_clicado("", link);
   });
 
