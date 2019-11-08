@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
     alert(link)
     console.log('logar')
     jQuery
-      .ajax({
+      .post({
         url: BASE_URL + "/api_insert_log_link_clicado",
         type: "post",
         contentType: "application/json",
