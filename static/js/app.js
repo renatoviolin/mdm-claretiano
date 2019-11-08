@@ -11,7 +11,7 @@ var range;
 var min_split = 10;
 var BASE_URL = "http://renato.dynu.net:8000";
 // var BASE_URL = "";
-
+var link
 jQuery(document).ready(function() {
   jQuery.fn.center = function() {
     this.css("position", "absolute");
@@ -19,22 +19,6 @@ jQuery(document).ready(function() {
     this.css("left", Math.max(0, (jQuery(window).width() - jQuery(this).outerWidth()) / 2 + jQuery(window).scrollLeft()) + "px");
     return this;
   };
-
-    jQuery("iframe").each(function() {
-      //Using closures to capture each one
-      var iframe = jQuery(this);
-      console.log(iframe)
-      iframe.on("load", function() {
-        //Make sure it is fully loaded
-        iframe.contents().click(function(event) {
-          iframe.trigger("click");
-        });
-      });
-
-      iframe.click(function() {
-        alert("cliclou");
-      });
-    });
 
   if (!window.x) x = {};
   x.Selector = {};
@@ -134,12 +118,6 @@ jQuery(document).ready(function() {
     link = jQuery(e.currentTarget).attr("href");
     logar_link_clicado("", link);
     e.preventDefault();
-  });
-  
-  jQuery(document).on("click", "iframe", function(e) {
-    alert('Iframe')
-    link = jQuery(e.currentTarget).attr("src");
-    logar_link_clicado("", link);
   });
 
   jQuery(document).on("click", "#anotacao_btn_menu", function(e) {
