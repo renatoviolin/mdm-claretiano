@@ -74,7 +74,7 @@ jQuery(document).ready(function() {
   });
 
   function logar_link_clicado(texto, link) {
-    alert('logar')
+    alert(link)
     console.log('logar')
     jQuery
       .ajax({
