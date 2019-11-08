@@ -106,7 +106,8 @@ em.trilha {
 .trilha_icon_stick,
 .trilha_icon_search,
 .trilha_icon_dicio,
-.trilha_icon_duvida {
+.trilha_icon_duvida,
+.trilha_icon_link {
   float: left;
   width: 5%;
   position: relative;
@@ -129,6 +130,9 @@ em.trilha {
 
 .trilha_icon_duvida {
   color: #962bbc;
+}
+.trilha_icon_link {
+  color: #00cca6;
 }
 
 .hearder_icons {

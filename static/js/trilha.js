@@ -136,7 +136,7 @@ function gerar_trilha(ra_aluno, pagina) {
           link = c2;
           texto_html = `
                <div class="trilha_row">
-                  <div class="trilha_icon_search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+                  <div class="trilha_icon_link"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></div>
                   <div class="data_hor">${dia}/${mes}</div>
                   <div class="data">
                      <div class="data_dia">${dia}</div>
