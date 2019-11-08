@@ -119,6 +119,11 @@ jQuery(document).ready(function() {
     logar_link_clicado("", link);
     e.preventDefault();
   });
+  
+  jQuery(document).on("click", "iframe", function(e) {
+    link = jQuery(e.currentTarget).attr("sec");
+    logar_link_clicado("", link);
+  });
 
   jQuery(document).on("click", "#anotacao_btn_menu", function(e) {
     logar_ferramenta(1);
