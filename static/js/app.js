@@ -10,7 +10,7 @@ var ra_aluno = 1;
 var range;
 var min_split = 10;
 var BASE_URL = "http://renato.dynu.net:8000";
-// var BASE_URL = "";  
+// var BASE_URL = "";
 
 jQuery(document).ready(function() {
   jQuery.fn.center = function() {
@@ -74,13 +74,8 @@ jQuery(document).ready(function() {
   });
 
   function logar_link_clicado(texto, link) {
-    alert(ra_aluno)
-    alert(pagina_atual)
-    alert(texto)
-    alert(link)
-    console.log('logar')
     jQuery
-      .post({
+      .ajax({
         url: BASE_URL + "/api_insert_log_link_clicado",
         type: "post",
         contentType: "application/json",
@@ -94,8 +89,10 @@ jQuery(document).ready(function() {
       })
       .fail(function(jqXHR, textStatus, jsondata) {
         console.log(jqXHR);
-        console.log(textStatus);
-        console.log(jsondata);
+        window.location.href = link;
+      })
+      .done(function(e) {
+        window.location.href = link;
       });
   }
 
@@ -118,9 +115,9 @@ jQuery(document).ready(function() {
   }
 
   jQuery(document).on("click", "a", function(e) {
-    console.log(e)
     link = jQuery(e.currentTarget).attr("href");
     logar_link_clicado("", link);
+    e.preventDefault();
   });
 
   jQuery(document).on("click", "#anotacao_btn_menu", function(e) {
