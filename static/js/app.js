@@ -73,6 +73,25 @@ jQuery(document).ready(function() {
     }
   });
 
+  function logar_link_clicado(texto, link) {
+    jQuery
+      .ajax({
+        url: BASE_URL + "/api_insert_log_link_clicado",
+        type: "post",
+        contentType: "application/json",
+        dataType: "json",
+        data: JSON.stringify({
+          ra_aluno: ra_aluno,
+          pagina: pagina_atual,
+          texto: texto,
+          link: link
+        })
+      })
+      .fail(function(jqXHR, textStatus, jsondata) {
+        console.log(jqXHR);
+      });
+  }
+
   function logar_ferramenta(acao) {
     jQuery
       .ajax({
@@ -90,6 +109,11 @@ jQuery(document).ready(function() {
         console.log(jqXHR);
       });
   }
+
+  jQuery("a").on("click", function(e) {
+    link = jQuery(e.currentTarget).attr("href");
+    logar_link_clicado("", link);
+  });
 
   jQuery(document).on("click", "#anotacao_btn_menu", function(e) {
     logar_ferramenta(1);
