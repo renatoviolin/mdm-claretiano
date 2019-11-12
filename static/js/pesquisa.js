@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
         console.log(id_pesquisa);
         h = "";
         for (i = 0; i < response.length; i++) {
-          h += '<div><a href="' + response[i].link + 'target="_blank" class="pesquisa_link"><span class="titulo">' + response[i].title + "</span></a><br>";
+          h += '<div><a href="' + response[i].link + '" target="_blank" class="pesquisa_link"><span class="titulo">' + response[i].title + "</span></a><br>";
           h += '<p class="link">' + response[i].link + "</p></div>";
 			  h += '<div class="pesquisa_util"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></div>';
         }
