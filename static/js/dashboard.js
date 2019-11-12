@@ -41,20 +41,20 @@ jQuery(document).ready(function () {
 
 			html_anotacao_click.innerHTML = data_json['clicks_anotacao']
 			html_anotacao_realizada.innerHTML = data_json['anotacao_realizada']
-			html_anotacao_porcentagem.innerHTML = parseInt(data_json['anotacao_realizada'] / data_json['clicks_anotacao'] * 100) + '%'
+			html_anotacao_porcentagem.innerHTML = parseInt(data_json['anotacao_realizada'] / data_json['clicks_anotacao'] * 100 || 0) + '%'
 
 			html_duvida_click.innerHTML = data_json['clicks_duvida']
 			html_duvida_realizada.innerHTML = data_json['duvida_enviada']
-			html_duvida_porcentagem.innerHTML = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100) + '%'
+			html_duvida_porcentagem.innerHTML = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100 || 0) + '%'
 
 			html_pesquisa_click.innerHTML = data_json['clicks_pesquisa']
 			html_pesquisa_realizada.innerHTML = data_json['total_pesquisa']
 			html_pesquisa_total_link.innerHTML = data_json['total_links']
 			html_pesquisa_resultado.innerHTML = data['pesquisa_clicado'].length
 			html_pesquisa_util.innerHTML = data['pesquisa_util'].length
-			html_pesquisa_realizada_porcentagem.innerHTML = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100) + '%'
-			html_pesquisa_porcentagem.innerHTML = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100) + '%'
-			html_pesquisa_util_porcentagem.innerHTML = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100) + '%'
+			html_pesquisa_realizada_porcentagem.innerHTML = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100 || 0) + '%'
+			html_pesquisa_porcentagem.innerHTML = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100 || 0) + '%'
+			html_pesquisa_util_porcentagem.innerHTML = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100 || 0) + '%'
 
 			html_dicionario_click.innerHTML = data_json['clicks_dicionario']
 			html_impressao_click.innerHTML = data_json['clicks_imprimir']

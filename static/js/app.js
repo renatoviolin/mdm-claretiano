@@ -88,15 +88,15 @@ jQuery(document).ready(function () {
 					link: link
 				})
 			})
-			// .fail(function (jqXHR, textStatus, jsondata) {
-			// 	console.log(jqXHR);
-			// 	// window.open(link);
-			// 	// window.location.href = link;
-			// })
-			// .done(function (e) {
-			// 	// window.location.href = link;
-			// 	// window.open(link);
-			// });
+		// .fail(function (jqXHR, textStatus, jsondata) {
+		// 	console.log(jqXHR);
+		// 	// window.open(link);
+		// 	// window.location.href = link;
+		// })
+		// .done(function (e) {
+		// 	// window.location.href = link;
+		// 	// window.open(link);
+		// });
 	}
 
 	function logar_ferramenta(acao) {
