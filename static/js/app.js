@@ -90,10 +90,12 @@ jQuery(document).ready(function () {
 			})
 			.fail(function (jqXHR, textStatus, jsondata) {
 				console.log(jqXHR);
-				window.location.href = link;
+				window.open(link);
+				// window.location.href = link;
 			})
 			.done(function (e) {
-				window.location.href = link;
+				// window.location.href = link;
+				window.open(link);
 			});
 	}
 
