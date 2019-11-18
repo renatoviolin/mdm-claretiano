@@ -1,85 +1,291 @@
-05-Nov-19 09:29:24 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 09:29:24 - Initiated a keyword detector instance.
+14-Nov-19 14:03:06 - 'pattern' package not found; tag filters are not available for English
+14-Nov-19 14:03:06 - Initiated a keyword detector instance.
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
-05-Nov-19 09:29:24 -  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
-05-Nov-19 09:29:24 -  * Restarting with stat
-05-Nov-19 09:29:36 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 09:29:36 - Initiated a keyword detector instance.
-05-Nov-19 09:29:36 -  * Debugger is active!
-05-Nov-19 09:29:37 -  * Debugger PIN: 319-966-330
-05-Nov-19 09:46:48 - 131.100.156.130 - - [05/Nov/2019 09:46:48] "[37mOPTIONS /api_get_notes HTTP/1.1[0m" 200 -
-05-Nov-19 09:46:48 - 131.100.156.130 - - [05/Nov/2019 09:46:48] "[37mPOST /api_get_notes HTTP/1.1[0m" 200 -
-05-Nov-19 09:47:02 - 187.72.137.60 - - [05/Nov/2019 09:47:02] "[37mOPTIONS /api_get_notes HTTP/1.1[0m" 200 -
-05-Nov-19 09:47:02 - 187.72.137.60 - - [05/Nov/2019 09:47:02] "[37mPOST /api_get_notes HTTP/1.1[0m" 200 -
-05-Nov-19 09:54:17 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 09:54:18 -  * Restarting with stat
-05-Nov-19 09:54:21 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 09:54:21 - Initiated a keyword detector instance.
-05-Nov-19 09:54:21 -  * Debugger is active!
-05-Nov-19 09:54:21 -  * Debugger PIN: 319-966-330
-05-Nov-19 09:54:32 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 09:54:32 -  * Restarting with stat
-05-Nov-19 09:54:35 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 09:54:35 - Initiated a keyword detector instance.
-05-Nov-19 09:54:35 -  * Debugger is active!
-05-Nov-19 09:54:35 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:03:01 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:03:02 -  * Restarting with stat
-05-Nov-19 10:03:04 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:03:04 - Initiated a keyword detector instance.
-05-Nov-19 10:03:04 -  * Debugger is active!
-05-Nov-19 10:03:04 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:03:14 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:03:14 -  * Restarting with stat
-05-Nov-19 10:03:16 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:03:16 - Initiated a keyword detector instance.
-05-Nov-19 10:03:16 -  * Debugger is active!
-05-Nov-19 10:03:16 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:03:44 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:03:44 -  * Restarting with stat
-05-Nov-19 10:03:46 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:03:46 - Initiated a keyword detector instance.
-05-Nov-19 10:03:47 -  * Debugger is active!
-05-Nov-19 10:03:47 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:03:52 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:03:52 -  * Restarting with stat
-05-Nov-19 10:03:54 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:03:54 - Initiated a keyword detector instance.
-05-Nov-19 10:03:54 -  * Debugger is active!
-05-Nov-19 10:03:54 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:04:12 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:04:12 -  * Restarting with stat
-05-Nov-19 10:04:15 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:04:15 - Initiated a keyword detector instance.
-05-Nov-19 10:04:15 -  * Debugger is active!
-05-Nov-19 10:04:15 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:04:20 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/banco_log.py', reloading
-05-Nov-19 10:04:20 -  * Restarting with stat
-05-Nov-19 10:04:22 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:04:22 - Initiated a keyword detector instance.
-05-Nov-19 10:04:23 -  * Debugger is active!
-05-Nov-19 10:04:23 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:08:08 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
-05-Nov-19 10:08:08 -  * Restarting with stat
-05-Nov-19 10:08:11 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:08:11 - Initiated a keyword detector instance.
-05-Nov-19 10:08:11 -  * Debugger is active!
-05-Nov-19 10:08:11 -  * Debugger PIN: 319-966-330
-05-Nov-19 10:08:49 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
-05-Nov-19 10:08:49 -  * Restarting with stat
-05-Nov-19 10:08:51 - 'pattern' package not found; tag filters are not available for English
-05-Nov-19 10:08:51 - Initiated a keyword detector instance.
-Traceback (most recent call last):
-  File "/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py", line 177, in <module>
-    @app.route('/api_insert_note', methods=["POST"])
-  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 1314, in decorator
-    self.add_url_rule(rule, endpoint, f, **options)
-  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 98, in wrapper_func
-    return f(self, *args, **kwargs)
-  File "/home/renato/.local/lib/python3.7/site-packages/flask/app.py", line 1283, in add_url_rule
-    "existing endpoint function: %s" % endpoint
-AssertionError: View function mapping is overwriting an existing endpoint function: insert_note
+14-Nov-19 14:03:06 -  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+14-Nov-19 14:03:06 -  * Restarting with stat
+14-Nov-19 14:03:08 - 'pattern' package not found; tag filters are not available for English
+14-Nov-19 14:03:08 - Initiated a keyword detector instance.
+14-Nov-19 14:03:08 -  * Debugger is active!
+14-Nov-19 14:03:08 -  * Debugger PIN: 319-966-330
+14-Nov-19 14:03:08 - 200.144.12.155 - - [14/Nov/2019 14:03:08] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:08 - 200.144.12.155 - - [14/Nov/2019 14:03:08] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:08 - 200.144.12.155 - - [14/Nov/2019 14:03:08] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:14 - 200.144.12.155 - - [14/Nov/2019 14:03:14] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:14 - 200.144.12.155 - - [14/Nov/2019 14:03:14] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:17 - 200.144.12.155 - - [14/Nov/2019 14:03:17] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:19 - 200.144.12.155 - - [14/Nov/2019 14:03:19] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:03:20 - 200.144.12.155 - - [14/Nov/2019 14:03:20] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:04:29 - 200.144.12.155 - - [14/Nov/2019 14:04:29] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:04:34 - 200.144.12.155 - - [14/Nov/2019 14:04:34] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:04:37 - 200.144.12.155 - - [14/Nov/2019 14:04:37] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:04:40 - 200.144.12.155 - - [14/Nov/2019 14:04:40] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:04:56 - 200.144.12.155 - - [14/Nov/2019 14:04:56] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:05:38 - 200.144.12.155 - - [14/Nov/2019 14:05:38] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:06:16 - 200.144.12.155 - - [14/Nov/2019 14:06:16] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:06:27 - 200.144.12.155 - - [14/Nov/2019 14:06:27] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:07:40 - 200.144.12.155 - - [14/Nov/2019 14:07:40] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:06 - 200.144.12.155 - - [14/Nov/2019 14:08:06] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:06 - 200.144.12.155 - - [14/Nov/2019 14:08:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14-Nov-19 14:08:37 - 200.144.12.155 - - [14/Nov/2019 14:08:37] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:37 - 200.144.12.155 - - [14/Nov/2019 14:08:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14-Nov-19 14:08:38 - 200.144.12.155 - - [14/Nov/2019 14:08:38] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:38 - 200.144.12.155 - - [14/Nov/2019 14:08:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14-Nov-19 14:08:43 - 200.144.12.155 - - [14/Nov/2019 14:08:43] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:46 - 200.144.12.155 - - [14/Nov/2019 14:08:46] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:47 - 200.144.12.155 - - [14/Nov/2019 14:08:47] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:08:58 - 200.144.12.155 - - [14/Nov/2019 14:08:58] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:02 - 200.144.12.155 - - [14/Nov/2019 14:09:02] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:02 - 200.144.12.155 - - [14/Nov/2019 14:09:02] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:20 - 200.144.12.155 - - [14/Nov/2019 14:09:20] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:20 - 200.144.12.155 - - [14/Nov/2019 14:09:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+14-Nov-19 14:09:22 - 200.144.12.155 - - [14/Nov/2019 14:09:22] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:34 - 200.144.12.155 - - [14/Nov/2019 14:09:34] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:44 - 200.144.12.155 - - [14/Nov/2019 14:09:44] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:44 - 200.144.12.155 - - [14/Nov/2019 14:09:44] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:09:53 - 200.144.12.155 - - [14/Nov/2019 14:09:53] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:10:02 - 200.144.12.155 - - [14/Nov/2019 14:10:02] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:00 - 200.144.12.155 - - [14/Nov/2019 14:11:00] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:03 - 200.144.12.155 - - [14/Nov/2019 14:11:03] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:04 - 200.144.12.155 - - [14/Nov/2019 14:11:04] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:43 - 200.144.12.155 - - [14/Nov/2019 14:11:43] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:43 - 200.144.12.155 - - [14/Nov/2019 14:11:43] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:49 - 200.144.12.155 - - [14/Nov/2019 14:11:49] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:52 - 200.144.12.155 - - [14/Nov/2019 14:11:52] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:11:52 - 200.144.12.155 - - [14/Nov/2019 14:11:52] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:12:34 - 200.144.12.155 - - [14/Nov/2019 14:12:34] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:12:42 - 200.144.12.155 - - [14/Nov/2019 14:12:42] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:12:42 - 200.144.12.155 - - [14/Nov/2019 14:12:42] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:13:16 - 200.144.12.155 - - [14/Nov/2019 14:13:16] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:14:20 - 200.144.12.155 - - [14/Nov/2019 14:14:20] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:14:51 - 200.144.12.155 - - [14/Nov/2019 14:14:51] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:15:19 - 200.144.12.155 - - [14/Nov/2019 14:15:19] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:15:22 - 200.144.12.155 - - [14/Nov/2019 14:15:22] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:15:22 - 200.144.12.155 - - [14/Nov/2019 14:15:22] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:17:57 - 200.144.12.155 - - [14/Nov/2019 14:17:57] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:00 - 200.144.12.155 - - [14/Nov/2019 14:18:00] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:00 - 200.144.12.155 - - [14/Nov/2019 14:18:00] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:29 - 200.144.12.155 - - [14/Nov/2019 14:18:29] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:34 - 200.144.12.155 - - [14/Nov/2019 14:18:34] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:34 - 200.144.12.155 - - [14/Nov/2019 14:18:34] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:38 - 200.144.12.155 - - [14/Nov/2019 14:18:38] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:41 - 200.144.12.155 - - [14/Nov/2019 14:18:41] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:41 - 200.144.12.155 - - [14/Nov/2019 14:18:41] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:50 - 200.144.12.155 - - [14/Nov/2019 14:18:50] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:53 - 200.144.12.155 - - [14/Nov/2019 14:18:53] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:18:53 - 200.144.12.155 - - [14/Nov/2019 14:18:53] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:19:12 - 200.144.12.155 - - [14/Nov/2019 14:19:12] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:19:15 - 200.144.12.155 - - [14/Nov/2019 14:19:15] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:19:15 - 200.144.12.155 - - [14/Nov/2019 14:19:15] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:01 - 200.144.12.155 - - [14/Nov/2019 14:20:01] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:04 - 200.144.12.155 - - [14/Nov/2019 14:20:04] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:04 - 200.144.12.155 - - [14/Nov/2019 14:20:04] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:10 - 200.144.12.155 - - [14/Nov/2019 14:20:10] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:14 - 200.144.12.155 - - [14/Nov/2019 14:20:14] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:14 - 200.144.12.155 - - [14/Nov/2019 14:20:14] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:18 - 200.144.12.155 - - [14/Nov/2019 14:20:18] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:18 - 200.144.12.155 - - [14/Nov/2019 14:20:18] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:21 - 200.144.12.155 - - [14/Nov/2019 14:20:21] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:20:22 - 200.144.12.155 - - [14/Nov/2019 14:20:22] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:03 - 131.100.156.130 - - [14/Nov/2019 14:21:03] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:08 - 187.72.137.60 - - [14/Nov/2019 14:21:08] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:08 - 187.72.137.60 - - [14/Nov/2019 14:21:08] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:11 - 187.72.137.60 - - [14/Nov/2019 14:21:11] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:11 - 187.72.137.60 - - [14/Nov/2019 14:21:11] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:12 - 131.100.156.130 - - [14/Nov/2019 14:21:12] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:42 - 187.72.137.60 - - [14/Nov/2019 14:21:42] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:42 - 187.72.137.60 - - [14/Nov/2019 14:21:42] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:44 - 131.100.156.130 - - [14/Nov/2019 14:21:44] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:44 - 131.100.156.130 - - [14/Nov/2019 14:21:44] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:46 - 131.100.156.130 - - [14/Nov/2019 14:21:46] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:47 - 131.100.156.130 - - [14/Nov/2019 14:21:47] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:51 - 131.100.156.130 - - [14/Nov/2019 14:21:51] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:51 - 131.100.156.130 - - [14/Nov/2019 14:21:51] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:21:55 - 131.100.156.130 - - [14/Nov/2019 14:21:55] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:04 - 131.100.156.130 - - [14/Nov/2019 14:22:04] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:04 - 131.100.156.130 - - [14/Nov/2019 14:22:04] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:07 - 187.72.137.60 - - [14/Nov/2019 14:22:07] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:07 - 131.100.156.130 - - [14/Nov/2019 14:22:07] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:12 - 187.72.137.60 - - [14/Nov/2019 14:22:12] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:12 - 187.72.137.60 - - [14/Nov/2019 14:22:12] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:14 - 131.100.156.130 - - [14/Nov/2019 14:22:14] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:22:14 - 131.100.156.130 - - [14/Nov/2019 14:22:14] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:23:10 - 200.144.12.155 - - [14/Nov/2019 14:23:10] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:23:13 - 200.144.12.155 - - [14/Nov/2019 14:23:13] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:23:14 - 200.144.12.155 - - [14/Nov/2019 14:23:14] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:15 - 187.72.137.60 - - [14/Nov/2019 14:24:15] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:15 - 187.72.137.60 - - [14/Nov/2019 14:24:15] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:17 - 131.100.156.130 - - [14/Nov/2019 14:24:17] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:17 - 131.100.156.130 - - [14/Nov/2019 14:24:17] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:43 - 200.144.12.155 - - [14/Nov/2019 14:24:43] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:59 - 200.144.12.155 - - [14/Nov/2019 14:24:59] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:24:59 - 200.144.12.155 - - [14/Nov/2019 14:24:59] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:25:06 - 200.144.12.155 - - [14/Nov/2019 14:25:06] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:25:07 - 200.144.12.155 - - [14/Nov/2019 14:25:07] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:25:21 - 131.100.156.130 - - [14/Nov/2019 14:25:21] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:25:21 - 131.100.156.130 - - [14/Nov/2019 14:25:21] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:11 - 200.144.12.155 - - [14/Nov/2019 14:26:11] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:14 - 200.144.12.155 - - [14/Nov/2019 14:26:14] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:14 - 200.144.12.155 - - [14/Nov/2019 14:26:14] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:20 - 200.144.12.155 - - [14/Nov/2019 14:26:20] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:23 - 200.144.12.155 - - [14/Nov/2019 14:26:23] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:23 - 200.144.12.155 - - [14/Nov/2019 14:26:23] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:27 - 200.144.12.155 - - [14/Nov/2019 14:26:27] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:41 - 200.144.12.155 - - [14/Nov/2019 14:26:41] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:41 - 200.144.12.155 - - [14/Nov/2019 14:26:41] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:46 - 200.144.12.155 - - [14/Nov/2019 14:26:46] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:46 - 200.144.12.155 - - [14/Nov/2019 14:26:46] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:57 - 200.144.12.155 - - [14/Nov/2019 14:26:57] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:26:57 - 200.144.12.155 - - [14/Nov/2019 14:26:57] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:01 - 200.144.12.155 - - [14/Nov/2019 14:27:01] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:05 - 200.144.12.155 - - [14/Nov/2019 14:27:05] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:05 - 200.144.12.155 - - [14/Nov/2019 14:27:05] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:34 - 200.144.12.155 - - [14/Nov/2019 14:27:34] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:41 - 200.144.12.155 - - [14/Nov/2019 14:27:41] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:41 - 200.144.12.155 - - [14/Nov/2019 14:27:41] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:48 - 200.144.12.155 - - [14/Nov/2019 14:27:48] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:27:59 - 200.144.12.155 - - [14/Nov/2019 14:27:59] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:21 - 200.144.12.155 - - [14/Nov/2019 14:28:21] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:36 - 200.144.12.155 - - [14/Nov/2019 14:28:36] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:36 - 200.144.12.155 - - [14/Nov/2019 14:28:36] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:45 - 200.144.12.155 - - [14/Nov/2019 14:28:45] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:45 - 200.144.12.155 - - [14/Nov/2019 14:28:45] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:51 - 200.144.12.155 - - [14/Nov/2019 14:28:51] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:51 - 200.144.12.155 - - [14/Nov/2019 14:28:51] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:55 - 200.144.12.155 - - [14/Nov/2019 14:28:55] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:58 - 200.144.12.155 - - [14/Nov/2019 14:28:58] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:28:59 - 200.144.12.155 - - [14/Nov/2019 14:28:59] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:29:03 - 200.144.12.155 - - [14/Nov/2019 14:29:03] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:29:06 - 200.144.12.155 - - [14/Nov/2019 14:29:06] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:29:07 - 200.144.12.155 - - [14/Nov/2019 14:29:07] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:29:12 - 200.144.12.155 - - [14/Nov/2019 14:29:12] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:31:24 - 200.144.12.155 - - [14/Nov/2019 14:31:24] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:31:24 - 200.144.12.155 - - [14/Nov/2019 14:31:24] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:38:31 - 200.144.12.155 - - [14/Nov/2019 14:38:31] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:38:44 - 200.144.12.155 - - [14/Nov/2019 14:38:44] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:38:44 - 200.144.12.155 - - [14/Nov/2019 14:38:44] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:38:52 - 200.144.12.155 - - [14/Nov/2019 14:38:52] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:38:59 - 200.144.12.155 - - [14/Nov/2019 14:38:59] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:39:00 - 200.144.12.155 - - [14/Nov/2019 14:39:00] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:39:14 - 200.144.12.155 - - [14/Nov/2019 14:39:14] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:39:27 - 200.144.12.155 - - [14/Nov/2019 14:39:27] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:39:27 - 200.144.12.155 - - [14/Nov/2019 14:39:27] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:40:19 - 200.144.12.155 - - [14/Nov/2019 14:40:19] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:40:24 - 200.144.12.155 - - [14/Nov/2019 14:40:24] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:40:24 - 200.144.12.155 - - [14/Nov/2019 14:40:24] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:02 - 200.144.12.155 - - [14/Nov/2019 14:41:02] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:09 - 200.144.12.155 - - [14/Nov/2019 14:41:09] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:09 - 200.144.12.155 - - [14/Nov/2019 14:41:09] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:12 - 200.144.12.155 - - [14/Nov/2019 14:41:12] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:21 - 200.144.12.155 - - [14/Nov/2019 14:41:21] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:41:21 - 200.144.12.155 - - [14/Nov/2019 14:41:21] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:22 - 200.144.12.155 - - [14/Nov/2019 14:45:22] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:31 - 200.144.12.155 - - [14/Nov/2019 14:45:31] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:31 - 200.144.12.155 - - [14/Nov/2019 14:45:31] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:47 - 200.144.12.155 - - [14/Nov/2019 14:45:47] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:51 - 200.144.12.155 - - [14/Nov/2019 14:45:51] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:51 - 200.144.12.155 - - [14/Nov/2019 14:45:51] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:56 - 200.144.12.155 - - [14/Nov/2019 14:45:56] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:45:59 - 200.144.12.155 - - [14/Nov/2019 14:45:59] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:46:00 - 200.144.12.155 - - [14/Nov/2019 14:46:00] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:48:49 - 200.144.12.155 - - [14/Nov/2019 14:48:49] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:48:52 - 200.144.12.155 - - [14/Nov/2019 14:48:52] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:48:52 - 200.144.12.155 - - [14/Nov/2019 14:48:52] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:00 - 200.144.12.155 - - [14/Nov/2019 14:49:00] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:03 - 200.144.12.155 - - [14/Nov/2019 14:49:03] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:03 - 200.144.12.155 - - [14/Nov/2019 14:49:03] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:38 - 200.144.12.155 - - [14/Nov/2019 14:49:38] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:41 - 200.144.12.155 - - [14/Nov/2019 14:49:41] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:49:41 - 200.144.12.155 - - [14/Nov/2019 14:49:41] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:08 - 200.144.12.155 - - [14/Nov/2019 14:51:08] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:18 - 200.144.12.155 - - [14/Nov/2019 14:51:18] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:18 - 200.144.12.155 - - [14/Nov/2019 14:51:18] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:21 - 200.144.12.155 - - [14/Nov/2019 14:51:21] "[37mGET /static/js/dashboard.js HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:24 - 200.144.12.155 - - [14/Nov/2019 14:51:24] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:51:24 - 200.144.12.155 - - [14/Nov/2019 14:51:24] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:52:26 - 187.72.137.60 - - [14/Nov/2019 14:52:26] "[37mOPTIONS /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:52:26 - 187.72.137.60 - - [14/Nov/2019 14:52:26] "[37mPOST /api_insert_log_link_clicado HTTP/1.1[0m" 200 -
+14-Nov-19 14:52:31 - 187.72.137.60 - - [14/Nov/2019 14:52:31] "[37mOPTIONS /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:52:31 - 187.72.137.60 - - [14/Nov/2019 14:52:31] "[37mPOST /api_get_dashboard HTTP/1.1[0m" 200 -
+14-Nov-19 14:57:53 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no dashboard
+entrou no log link clicado
+entrou no dashboard
+14-Nov-19 14:57:53 -  * Restarting with stat
+14-Nov-19 14:57:54 - 'pattern' package not found; tag filters are not available for English
+14-Nov-19 14:57:54 - Initiated a keyword detector instance.
+14-Nov-19 14:57:54 -  * Debugger is active!
+14-Nov-19 14:57:54 -  * Debugger PIN: 319-966-330
+14-Nov-19 14:58:09 -  * Detected change in '/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py', reloading
+14-Nov-19 14:58:09 -  * Restarting with stat
+  File "/var/www/html/nextcloud/data/renato/files/mdm-claretiano/app.py", line 286
+    links = 
+           ^
+SyntaxError: invalid syntax
