@@ -2,14 +2,14 @@ jQuery(document).ready(function () {
 
 	// ====== OPEN WINDOW =======
 	jQuery('#problema_btn_menu').on('click', function () {
-		jQuery('.fixed').slideToggle('slow');
+		jQuery('.problema_fixed').slideToggle('slow');
 		jQuery("#problema_conteudo").focus();
 	})
 
 
 	// ===== CLOSE WINDOW ==========
-	jQuery('.chat-header, #problema_btn_cancelar').on('click', function () {
-		jQuery('.fixed').slideToggle('slow');
+	jQuery('.problema_header, #problema_btn_cancelar').on('click', function () {
+		jQuery('.problema_fixed').slideToggle('slow');
 		jQuery("#problema_conteudo").html("");
 	})
 
@@ -39,12 +39,12 @@ jQuery(document).ready(function () {
 			alert('O problema foi reportado com sucesso.\nEm breve entraremos em contato.\nObrigado pelo seu feedback.')
 			jQuery("#modal").removeClass("loading");
 			jQuery("#problema_conteudo").html("");
-			jQuery('.fixed').slideToggle('slow');
+			jQuery('.problema_fixed').slideToggle('slow');
 		}).fail(function (jqXHR, textStatus, jsondata) {
 			console.log(jsondata);
 			jQuery("#problema_conteudo").html("");
 			jQuery("#modal").removeClass("loading");
-			jQuery('.fixed').slideToggle('slow');
+			jQuery('.problema_fixed').slideToggle('slow');
 		});
 	});
 });

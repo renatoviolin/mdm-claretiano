@@ -1,4 +1,4 @@
-.fixed {
+.problema_fixed {
     display: none;
     position: fixed;
     bottom: 0px;
@@ -15,7 +15,7 @@
 	padding: 10px;
 }
 
-.chat-header {
+.problema_header {
     width: 100%;
     height: 36px;
     color: #f2f2f2;
