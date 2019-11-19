@@ -1,218 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>MDM App</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/anotacao.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/duvida.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/pesquisa.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/dicionario.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/anotacao.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/duvida.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/pesquisa.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/dicionario.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
-  </head>
 
-  <body>
-    <!----------- MENU LATERAL ------------>
-    <div class="modal" id="modal"></div>
-    <div class="menu_lateral" id="menu_lateral">
-      <div class="btn_menu_lateral" id="anotacao_btn_menu">AN<span class="tooltiptext">Faça anotações no material</span></div>
-      <div class="btn_menu_lateral" id="duvida_btn_menu">DU<span class="tooltiptext">Envie uma dúvida do conteúdo</span></div>
-      <div class="btn_menu_lateral" id="pesquisa_btn_menu">PE<span class="tooltiptext">Faça uma pesquisa na internet</span></div>
-      <div class="btn_menu_lateral" id="dicionario_btn_menu">DC<span class="tooltiptext">Busque uma palavra no dicionário</span></div>
-      <div class="btn_menu_lateral" id="trilha_btn_menu">TR<span class="tooltiptext">Veja sua trilha de aprendizagem</span></div>
-    </div>
+<head>
+	<title>MDM App</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/anotacao.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/duvida.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/pesquisa.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/dicionario.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/trilha.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/problema.css') }}" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/anotacao.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/duvida.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/pesquisa.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/dicionario.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/trilha.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/problema.js') }}"></script>
+</head>
 
-    <!---------- TRILHA DE APRENDIZAGEM ------------>
-    <form target="_blank" method="POST">
-      <input type="hidden" name="form_ra_aluno" id="form_ra_aluno" />
-      <input type="hidden" name="form_pagina" id="form_pagina" />
-    </form>
+<body>
+	<!----------- MENU LATERAL ------------>
+	<div class="modal" id="modal"></div>
+	<div class="menu_lateral" id="menu_lateral">
+		<div class="btn_menu_lateral" id="anotacao_btn_menu">AN<span class="tooltiptext">Faça anotações no
+				material</span></div>
+		<div class="btn_menu_lateral" id="duvida_btn_menu">DU<span class="tooltiptext">Envie uma dúvida do
+				conteúdo</span></div>
+		<div class="btn_menu_lateral" id="pesquisa_btn_menu">PE<span class="tooltiptext">Faça uma pesquisa na
+				internet</span></div>
+		<div class="btn_menu_lateral" id="dicionario_btn_menu">DC<span class="tooltiptext">Busque uma palavra no
+				dicionário</span></div>
+		<div class="btn_menu_lateral" id="trilha_btn_menu">TR<span class="tooltiptext">Veja sua trilha de
+				aprendizagem</span></div>
+		<div class="btn_menu_lateral" id="problema_btn_menu">PR<span class="tooltiptext">Problema</span></div>
+	</div>
 
-    <!--------- JANELA ANOTAR ------------->
-    <div class="anotacao_container" id="anotacao_container">
-      <div class="container_header">Anotações</div>
-      <textarea class="message form-control" rows="3" maxlength="140" id="anotacao_textarea"></textarea>
-      <div class="anotar_caractere_restante"><span class="caracteres_restantes" id="caracteres_restantes">140</span> caractere(s) restantes</div>
-      <div class="sep" style="margin-top: 10px"></div>
-      <div class="col-sm-6" style="text-align: center">
-        <button type="button" id="anotacao_btn_cancelar" class="btn btn-warning btn-block">Cancelar</button>
-      </div>
-      <div class="col-sm-6" style="text-align: center">
-        <button type="button" id="anotacao_btn_salvar" class="btn btn-primary btn-block">Salvar</button>
-      </div>
-    </div>
+	<!---------- TRILHA DE APRENDIZAGEM ------------>
+	<form target="_blank" method="POST">
+		<input type="hidden" name="form_ra_aluno" id="form_ra_aluno" />
+		<input type="hidden" name="form_pagina" id="form_pagina" />
+	</form>
 
-    <!--------- ENVIAR DUVIDA NO CORREIO --------->
-    <div class="duvida_container" id="duvida_container">
-      <div class="container_header">Envie sua dúvida no Correio</div>
-      <label for="titulo_questao">Título</label>
-      <input type="text" class="form-control" id="duvida_titulo" />
-      <label for="titulo_questao">Dúvida</label>
-      <div class="duvida_conteudo" contenteditable id="duvida_conteudo"></div>
-      <div class="sep" style="margin-top: 10px"></div>
-      <div class="col-sm-6" style="text-align: center">
-        <button type="button" id="duvida_btn_cancelar" class="btn btn-warning btn-block">Cancelar</button>
-      </div>
-      <div class="col-sm-6" style="text-align: center">
-        <button type="button" id="duvida_btn_enviar" class="btn btn-primary btn-block">Enviar</button>
-      </div>
-    </div>
+	<!--------- JANELA ANOTAR ------------->
+	<div class="anotacao_container" id="anotacao_container">
+		<div class="container_header">Anotações</div>
+		<textarea class="message form-control" rows="3" maxlength="140" id="anotacao_textarea"></textarea>
+		<div class="anotar_caractere_restante"><span class="caracteres_restantes" id="caracteres_restantes">140</span>
+			caractere(s) restantes</div>
+		<div class="sep" style="margin-top: 10px"></div>
+		<div class="col-sm-6" style="text-align: center">
+			<button type="button" id="anotacao_btn_cancelar" class="btn btn-warning btn-block">Cancelar</button>
+		</div>
+		<div class="col-sm-6" style="text-align: center">
+			<button type="button" id="anotacao_btn_salvar" class="btn btn-primary btn-block">Salvar</button>
+		</div>
+	</div>
 
-    <!------------- RESULTADOS DA PESQUISA ------------->
-    <div class="pesquisa_container" id="pesquisa_container">
-      <div class="header_btn_fechar" id="pesquisa_btn_fechar"><i class="fa fa-times-circle fa-1_5x" aria-hidden="true"></i></div>
-      <div class="container_header">Pesquisa</div>
-      <div id="pesquisa_conteudo" class="pesquisa_conteudo"></div>
-    </div>
+	<!--------- ENVIAR DUVIDA NO CORREIO --------->
+	<div class="duvida_container" id="duvida_container">
+		<div class="container_header">Envie sua dúvida no Correio</div>
+		<label for="titulo_questao">Título</label>
+		<input type="text" class="form-control" id="duvida_titulo" />
+		<label for="titulo_questao">Dúvida</label>
+		<div class="duvida_conteudo" contenteditable id="duvida_conteudo"></div>
+		<div class="sep" style="margin-top: 10px"></div>
+		<div class="col-sm-6" style="text-align: center">
+			<button type="button" id="duvida_btn_cancelar" class="btn btn-warning btn-block">Cancelar</button>
+		</div>
+		<div class="col-sm-6" style="text-align: center">
+			<button type="button" id="duvida_btn_enviar" class="btn btn-primary btn-block">Enviar</button>
+		</div>
+	</div>
 
-    <!--------- RESULTADOS DA BUSCA NO DICIONÁRO --------->
-    <div class="dicionario_container" id="dicionario_container">
-      <div class="header_btn_fechar" id="dicionario_btn_fechar"><i class="fa fa-times-circle fa-1_5x" aria-hidden="true"></i></div>
-      <div class="container_header">Dicionário</div>
-      <h4 id="dicionario_palavra"></h4>
-      <div id="dicionario_resultado" class="dicionario_resultado"></div>
-    </div>
+	<!------------- RESULTADOS DA PESQUISA ------------->
+	<div class="pesquisa_container" id="pesquisa_container">
+		<div class="header_btn_fechar" id="pesquisa_btn_fechar"><i class="fa fa-times-circle fa-1_5x"
+				aria-hidden="true"></i></div>
+		<div class="container_header">Pesquisa</div>
+		<div id="pesquisa_conteudo" class="pesquisa_conteudo"></div>
+	</div>
 
-    <!--------- CONTEÚDO PRINCIPAL ------------->
-    <nav class="navbar navbar-inverse"></nav>
-    <div class="container-fluid bg-3">
-      <div class="col-sm-8">
-        <div id="row_1" class="row">
-          <h3>Conceitos de Marketing</h3>
-          <p>
-            Antes de iniciarmos nossos <em>estudos em Marketing Digital</em>, é importante conhecermos e estudarmos um pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.
-            Se pararmos para pensar um pouco, o marketing está presente praticamente em nossa vida todos os dias afinal somos impactados por alguma ação na rua, ao navegar na internet pesquisando
-            produtos e serviços, ao lermos um jornal ou assistindo televisão. Mas afinal, o que é marketing?
-          </p>
-          <p>
-            Se fizermos uma rápida pesquisa na internet, <em>encontraremos diversas definições</em> que grandes nomes da literatura e associações conceituam o termo, já que englobam ações com
-            produtos, serviços, consumidores e suas necessidades. Se considerarmos do inglês, sua tradução literal, o termo marketing nos remete ao mercado em ação, já que market significa “mercado” e
-            o sufixo -ing indica “ação”. Segundo Kotler (2006, p.02) “marketing envolve a identificação e a satisfação das necessidades humanas e sociais”. Algumas pessoas confundem marketing com
-            propaganda, porém esse último é apenas uma das ferramentas que o marketing utiliza. que o marketing utiliza.
-          </p>
-          <p>
-            Para a Associação Americana de Marketing (AMA), <em>“Marketing é a atividade</em>, conjunto de conhecimentos e os processos de criar, comunicar, entregar e trocar ofertas que tenham valor
-            para consumidores, clientes, parceiros e sociedade como um todo.”. De maneira geral e simplificada, podemos dizer que marketing é um conjunto de ações e atividades realizadas por uma
-            organização para atrair e reter clientes, seu objetivo é atender as necessidades e desejos do consumidor de preferência de forma lucrativa.
-          </p>
-          <p>
-            Mas nada adianta falar de marketing se não ficar claro o papel do composto de marketing ou o mix de marketing popularmente conhecido. O mix de marketing é uma ferramenta básica para
-            identificar as melhores estratégias de mercado e, assim, permitir tomadas de decisões mais eficazes. O conceito foi criado pelo professor Jerome McCarthy e difundido por Philip Kotler e
-            representa os 4 pilares (4Ps) de qualquer estratégia de marketing.
-          </p>
-          <p>Os <a href="#">4Ps de Marketing</a> são: Produto, Preço, Praça e Promoção. As variáveis de cada um dos pilares do mix de marketing são apresentadas na Figura 1, a seguir:</p>
-          <p>
-            O mix de marketing, <a href="http://www.google.com.br/mix">engloba as decisões</a> do produto, as quais incluem a identificação de oportunidades de lançamento de produtos e adequação do
-            mesmo às necessidades dos clientes; as decisões de preço, o qual é selecionado visando gerar vantagem competitiva e retorno para a empresa; as decisões de promoção, relativas aos
-            investimentos em estratégias de comunicação e promoção de vendas; e as decisões de praça ou distribuição, que envolvem a escolha de canais de vendas que satisfaça as necessidades dos
-            clientes. (GONÇALVES, 2008).
-          </p>
-          <p>
-            Em sua décima quarta edição do livro Administração de Marketing, KOTLER (2012) propõe discutir os 4Ps já que os mesmos não se aplicam a todos os tipos de produtos e serviços. Os novos Ps
-            propostos por Kotler na administração moderna de marketing são: Pessoas, Processos, Programas e Performance.
-          </p>
-          <p>
-            <iframe src="https://player.vimeo.com/video/327267866" allowfullscreen="allowfullscreen" width="640" height="360" frameborder="0"></iframe>
-          </p>
-        </div>
+	<!--------- RESULTADOS DA BUSCA NO DICIONÁRO --------->
+	<div class="dicionario_container" id="dicionario_container">
+		<div class="header_btn_fechar" id="dicionario_btn_fechar"><i class="fa fa-times-circle fa-1_5x"
+				aria-hidden="true"></i></div>
+		<div class="container_header">Dicionário</div>
+		<h4 id="dicionario_palavra"></h4>
+		<div id="dicionario_resultado" class="dicionario_resultado"></div>
+	</div>
 
-        <div id="row_2" class="row">
-          <h3>Diferença entre Marketing Tradicional X Digital</h3>
-          <p>
-            Agora que já falamos sobre marketing, conceituamos seu composto de mercado (mix de marketing), vamos falar sobre o termo que deu origem ao nome de nosso curso. Afinal, o que é Marketing
-            Digital?
-          </p>
-          <p>
-            Você já parou para pensar: Quantas vezes pesquisou um produto na internet hoje? Navegou em suas redes sociais, ou simplesmente utilizou seu smartphone para pesquisar o telefone da
-            pizzaria? Tenho certeza que fez essa e outras coisas simples que estão presentes em nossa rotina diária como consumidores desse mundo digital. E não é à toa que cada vez mais os
-            consumidores estão conectados em seus dispositivos, graças ao alcance de dados e toda tecnologia que temos a disposição hoje. Se nossa vida já não é mais a mesma sem a internet, nosso
-            processo de compra também não.
-          </p>
-          <p>
-            Tendo em vista esse processo, surge o conceito de Marketing Digital, que de uma maneira simplista, podemos definir como a promoção de produtos e vendas através da internet. É a utilização
-            de canais como sites, blogs, ferramentas de busca, mídias sociais e outros meios que as empresas procuram solucionar as dores e desejos de seus clientes e potenciais clientes.
-          </p>
-          <p>
-            Ferreira Junior (2015, p. 50) ao falar sobre marketing digital, utiliza o termo: “web-marketing atribuindo o nome a um conjunto de ferramentas e estratégias utilizadas através da rede
-            mundial de computadores para promoção, comunicação e comercialização de produtos e serviços. Também pode ser utilizado para a promoção de profissionais e celebridades”. Vale lembrar que o
-            marketing digital foi uma das estratégias fundamentais para a vitória presidencial do ex-presidente dos Estados Unidos em 2008.
-          </p>
-          <p>
-            Segundo Vettori e Ferreira Júnior (2013, p. 16) citado por Ferreira Júnior (2015, p. 52), “o marketing digital por si só pode gerar ótimos resultados, porém, se for aplicado em conjunto
-            com táticas do marketing tradicional, o efeito será o melhor possível. Pode-se, por exemplo, utilizar estratégias de marketing nas mídias sociais e vice-versa. Para que essa integração
-            funcione da melhor maneira, é necessário entender as diferenças que fazem com que essas duas formas distintas de marketing se completem”.
-          </p>
-          <p>
-            Agora que conceituamos ambos os termos, vamos então discutir os principais aspectos que distinguem o marketing tradicional do marketing digital.
-          </p>
-        </div>
+	<!--------- REPORTAR PROBLEMA --------->
+	<div class="fixed" id='fixed'>
+		<div class="chat-header">Reportar problema</div>
+		<div class="problema_container">
+			<label for="titulo_questao">Informe o problema ocorrido</label>
+			<div class="duvida_conteudo" contenteditable id="problema_conteudo"></div>
+			<div class="sep" style="margin-bottom: 10px"></div>
+			<div class="col-sm-6" style="text-align: center">
+				<button type="button" id="problema_btn_cancelar" class="btn btn-warning btn-block">Cancelar</button>
+			</div>
+			<div class="col-sm-6" style="text-align: center">
+				<button type="button" id="problema_btn_enviar" class="btn btn-primary btn-block">Enviar</button>
+			</div>
+		</div>
+	</div>
 
-        <div id="row_3" class="row">
-          <h3>Apple Watch</h3>
-          <p>
-            The original Apple Watch smartwatch was announced by Tim Cook on September 9, 2014, being introduced as a product with health and fitness-tracking.[288][289] It was released on April 24,
-            2015.
-          </p>
-          <p>
-            The second generation of Apple Watch, Apple Watch Series 2, was released in September 2016, featuring greater water resistance, a faster processor, and brighter display.
-          </p>
-          <p>
-            On September 12, 2017, Apple introduced the Apple Watch Series 3 featuring LTE cellular connectivity, giving the wearable independence from an iPhone[294] except for the setup process.
-          </p>
-          <p>On September 12, 2018, Apple introduced the Apple Watch Series 4, featuring new display, electrocardiogram, and fall detection.</p>
-        </div>
 
-        <div id="row_4" class="row">
-          <h3>Ipad</h3>
-          <p>
-            On January 27, 2010, Apple introduced their much-anticipated media tablet, the iPad.[271][272] It offers multi-touch interaction with multimedia formats including newspapers, e-books,
-            photos, videos, music, word processing documents, video games, and most existing iPhone apps using a 9.7-inch screen.[273] It also includes a mobile version of Safari for web browsing, as
-            well as access to the App Store, iTunes Library, iBookstore, Contacts, and Notes. Content is downloadable via Wi-Fi and optional 3G service or synced through the user's computer.[274] AT&T
-            was initially the sole U.S. provider of 3G wireless access for the iPad.
-          </p>
-          <p>
-            On March 2, 2011, Apple introduced the iPad 2, which had a faster processor and a camera on the front and back. It also added support for optional 3G service provided by Verizon in
-            addition to AT&T.[276] The availability of the iPad 2 was initially limited as a result of a devastating earthquake and tsunami in Japan in March 2011.
-          </p>
-        </div>
+	<!--------- CONTEÚDO PRINCIPAL ------------->
+	<nav class="navbar navbar-inverse"></nav>
+	<div class="container-fluid bg-3">
+		<div class="col-sm-8">
+			<div id="row_1" class="row">
+				<h3>Conceitos de Marketing</h3>
+				<p>
+					Antes de iniciarmos nossos <em>estudos em Marketing Digital</em>, é importante conhecermos e
+					estudarmos um pouco sobre o que é Marketing e qual a sua importância na vida dos consumidores.
+					Se pararmos para pensar um pouco, o marketing está presente praticamente em nossa vida todos os dias
+					afinal somos impactados por alguma ação na rua, ao navegar na internet pesquisando
+					produtos e serviços, ao lermos um jornal ou assistindo televisão. Mas afinal, o que é marketing?
+				</p>
+				<p>
+					Se fizermos uma rápida pesquisa na internet, <em>encontraremos diversas definições</em> que grandes
+					nomes da literatura e associações conceituam o termo, já que englobam ações com
+					produtos, serviços, consumidores e suas necessidades. Se considerarmos do inglês, sua tradução
+					literal, o termo marketing nos remete ao mercado em ação, já que market significa “mercado” e
+					o sufixo -ing indica “ação”. Segundo Kotler (2006, p.02) “marketing envolve a identificação e a
+					satisfação das necessidades humanas e sociais”. Algumas pessoas confundem marketing com
+					propaganda, porém esse último é apenas uma das ferramentas que o marketing utiliza. que o marketing
+					utiliza.
+				</p>
+				<p>
+					Para a Associação Americana de Marketing (AMA), <em>“Marketing é a atividade</em>, conjunto de
+					conhecimentos e os processos de criar, comunicar, entregar e trocar ofertas que tenham valor
+					para consumidores, clientes, parceiros e sociedade como um todo.”. De maneira geral e simplificada,
+					podemos dizer que marketing é um conjunto de ações e atividades realizadas por uma
+					organização para atrair e reter clientes, seu objetivo é atender as necessidades e desejos do
+					consumidor de preferência de forma lucrativa.
+				</p>
+				<p>
+					Mas nada adianta falar de marketing se não ficar claro o papel do composto de marketing ou o mix de
+					marketing popularmente conhecido. O mix de marketing é uma ferramenta básica para
+					identificar as melhores estratégias de mercado e, assim, permitir tomadas de decisões mais eficazes.
+					O conceito foi criado pelo professor Jerome McCarthy e difundido por Philip Kotler e
+					representa os 4 pilares (4Ps) de qualquer estratégia de marketing.
+				</p>
+				<p>Os <a href="#">4Ps de Marketing</a> são: Produto, Preço, Praça e Promoção. As variáveis de cada um
+					dos pilares do mix de marketing são apresentadas na Figura 1, a seguir:</p>
+				<p>
+					O mix de marketing, <a href="http://www.google.com.br/mix">engloba as decisões</a> do produto, as
+					quais incluem a identificação de oportunidades de lançamento de produtos e adequação do
+					mesmo às necessidades dos clientes; as decisões de preço, o qual é selecionado visando gerar
+					vantagem competitiva e retorno para a empresa; as decisões de promoção, relativas aos
+					investimentos em estratégias de comunicação e promoção de vendas; e as decisões de praça ou
+					distribuição, que envolvem a escolha de canais de vendas que satisfaça as necessidades dos
+					clientes. (GONÇALVES, 2008).
+				</p>
+				<p>
+					Em sua décima quarta edição do livro Administração de Marketing, KOTLER (2012) propõe discutir os
+					4Ps já que os mesmos não se aplicam a todos os tipos de produtos e serviços. Os novos Ps
+					propostos por Kotler na administração moderna de marketing são: Pessoas, Processos, Programas e
+					Performance.
+				</p>
+				<p>
+					<iframe src="https://player.vimeo.com/video/327267866" allowfullscreen="allowfullscreen" width="640"
+						height="360" frameborder="0"></iframe>
+				</p>
+			</div>
 
-        <div id="row_5" class="row">
-          <h3>What Does an Operating System Do?</h3>
+			<div id="row_2" class="row">
+				<h3>Diferença entre Marketing Tradicional X Digital</h3>
+				<p>
+					Agora que já falamos sobre marketing, conceituamos seu composto de mercado (mix de marketing), vamos
+					falar sobre o termo que deu origem ao nome de nosso curso. Afinal, o que é Marketing
+					Digital?
+				</p>
+				<p>
+					Você já parou para pensar: Quantas vezes pesquisou um produto na internet hoje? Navegou em suas
+					redes sociais, ou simplesmente utilizou seu smartphone para pesquisar o telefone da
+					pizzaria? Tenho certeza que fez essa e outras coisas simples que estão presentes em nossa rotina
+					diária como consumidores desse mundo digital. E não é à toa que cada vez mais os
+					consumidores estão conectados em seus dispositivos, graças ao alcance de dados e toda tecnologia que
+					temos a disposição hoje. Se nossa vida já não é mais a mesma sem a internet, nosso
+					processo de compra também não.
+				</p>
+				<p>
+					Tendo em vista esse processo, surge o conceito de Marketing Digital, que de uma maneira simplista,
+					podemos definir como a promoção de produtos e vendas através da internet. É a utilização
+					de canais como sites, blogs, ferramentas de busca, mídias sociais e outros meios que as empresas
+					procuram solucionar as dores e desejos de seus clientes e potenciais clientes.
+				</p>
+				<p>
+					Ferreira Junior (2015, p. 50) ao falar sobre marketing digital, utiliza o termo: “web-marketing
+					atribuindo o nome a um conjunto de ferramentas e estratégias utilizadas através da rede
+					mundial de computadores para promoção, comunicação e comercialização de produtos e serviços. Também
+					pode ser utilizado para a promoção de profissionais e celebridades”. Vale lembrar que o
+					marketing digital foi uma das estratégias fundamentais para a vitória presidencial do ex-presidente
+					dos Estados Unidos em 2008.
+				</p>
+				<p>
+					Segundo Vettori e Ferreira Júnior (2013, p. 16) citado por Ferreira Júnior (2015, p. 52), “o
+					marketing digital por si só pode gerar ótimos resultados, porém, se for aplicado em conjunto
+					com táticas do marketing tradicional, o efeito será o melhor possível. Pode-se, por exemplo,
+					utilizar estratégias de marketing nas mídias sociais e vice-versa. Para que essa integração
+					funcione da melhor maneira, é necessário entender as diferenças que fazem com que essas duas formas
+					distintas de marketing se completem”.
+				</p>
+				<p>
+					Agora que conceituamos ambos os termos, vamos então discutir os principais aspectos que distinguem o
+					marketing tradicional do marketing digital.
+				</p>
+			</div>
 
-          <p>
-            An operating system is the core set of software on a device that keeps everything together. Operating systems communicate with the device’s hardware. They handle everything from your
-            keyboard and mice to the Wi-Fi radio, storage devices, and display. In other words, an operating system handles input and output devices. Operating systems use device drivers written by
-            hardware creators to communicate with their devices.
-          </p>
+			<div id="row_3" class="row">
+				<h3>Apple Watch</h3>
+				<p>
+					The original Apple Watch smartwatch was announced by Tim Cook on September 9, 2014, being introduced
+					as a product with health and fitness-tracking.[288][289] It was released on April 24,
+					2015.
+				</p>
+				<p>
+					The second generation of Apple Watch, Apple Watch Series 2, was released in September 2016,
+					featuring greater water resistance, a faster processor, and brighter display.
+				</p>
+				<p>
+					On September 12, 2017, Apple introduced the Apple Watch Series 3 featuring LTE cellular
+					connectivity, giving the wearable independence from an iPhone[294] except for the setup process.
+				</p>
+				<p>On September 12, 2018, Apple introduced the Apple Watch Series 4, featuring new display,
+					electrocardiogram, and fall detection.</p>
+			</div>
 
-          <p>
-            Operating systems also include a lot of software—things like common system services, libraries, and application programming interfaces (APIs) that developers can use to write programs that
-            run on the operating system.
-          </p>
+			<div id="row_4" class="row">
+				<h3>Ipad</h3>
+				<p>
+					On January 27, 2010, Apple introduced their much-anticipated media tablet, the iPad.[271][272] It
+					offers multi-touch interaction with multimedia formats including newspapers, e-books,
+					photos, videos, music, word processing documents, video games, and most existing iPhone apps using a
+					9.7-inch screen.[273] It also includes a mobile version of Safari for web browsing, as
+					well as access to the App Store, iTunes Library, iBookstore, Contacts, and Notes. Content is
+					downloadable via Wi-Fi and optional 3G service or synced through the user's computer.[274] AT&T
+					was initially the sole U.S. provider of 3G wireless access for the iPad.
+				</p>
+				<p>
+					On March 2, 2011, Apple introduced the iPad 2, which had a faster processor and a camera on the
+					front and back. It also added support for optional 3G service provided by Verizon in
+					addition to AT&T.[276] The availability of the iPad 2 was initially limited as a result of a
+					devastating earthquake and tsunami in Japan in March 2011.
+				</p>
+			</div>
 
-          <p>
-            The operating system sits in between the applications you run and the hardware, using the hardware drivers as the interface between the two. For example, when an application wants to print
-            something, it hands that task off to the operating system. The operating system sends the instructions to the printer, using the printer’s drivers to send the correct signals. The
-            application that’s printing doesn’t have to care about what printer you have or understand how it works. The OS handles the details.
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </body>
+			<div id="row_5" class="row">
+				<h3>What Does an Operating System Do?</h3>
+
+				<p>
+					An operating system is the core set of software on a device that keeps everything together.
+					Operating systems communicate with the device’s hardware. They handle everything from your
+					keyboard and mice to the Wi-Fi radio, storage devices, and display. In other words, an operating
+					system handles input and output devices. Operating systems use device drivers written by
+					hardware creators to communicate with their devices.
+				</p>
+
+				<p>
+					Operating systems also include a lot of software—things like common system services, libraries, and
+					application programming interfaces (APIs) that developers can use to write programs that
+					run on the operating system.
+				</p>
+
+				<p>
+					The operating system sits in between the applications you run and the hardware, using the hardware
+					drivers as the interface between the two. For example, when an application wants to print
+					something, it hands that task off to the operating system. The operating system sends the
+					instructions to the printer, using the printer’s drivers to send the correct signals. The
+					application that’s printing doesn’t have to care about what printer you have or understand how it
+					works. The OS handles the details.
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</body>
+
 </html>
