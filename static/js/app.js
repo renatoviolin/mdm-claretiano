@@ -35,7 +35,20 @@ jQuery(document).ready(function () {
 		return t;
 	};
 
-	// ra_aluno = prompt("Digite seu RA", "1");
+
+	if (window.localStorage['ra'] == null) {
+		ra_aluno = prompt("Digite seu RA", "1");
+		if (ra_aluno == null) {
+			return;
+		}
+		window.localStorage['ra'] = ra_aluno
+	}
+	else {
+		ra_aluno = window.localStorage['ra']
+	}
+
+
+
 	// _pag = window.location.href.split("/");
 	// pagina_atual = _pag[_pag.length - 2];
 	pagina_atual = window.location.href;
@@ -88,15 +101,6 @@ jQuery(document).ready(function () {
 					link: link
 				})
 			})
-		// .fail(function (jqXHR, textStatus, jsondata) {
-		// 	console.log(jqXHR);
-		// 	// window.open(link);
-		// 	// window.location.href = link;
-		// })
-		// .done(function (e) {
-		// 	// window.location.href = link;
-		// 	// window.open(link);
-		// });
 	}
 
 	function logar_ferramenta(acao) {
@@ -119,6 +123,7 @@ jQuery(document).ready(function () {
 
 	jQuery(document).on("click", "a", function (e) {
 		link = jQuery(e.currentTarget).attr("href");
+		console.log(link)
 		logar_link_clicado("", link);
 		// e.preventDefault();
 	});
