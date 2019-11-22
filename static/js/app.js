@@ -67,7 +67,7 @@ jQuery(document).ready(function () {
 	all_p = jQuery("p");
 	for (i = 0; i < all_p.length; i++) all_p[i].id = i;
 
-	jQuery(".col-sm-8, .fl-rich-text").bind("mouseup", function (e) {
+	jQuery(".col-sm-8, .fl-content").bind("mouseup", function (e) {
 		selected_text = x.Selector.getSelected()
 			.getRangeAt(0)
 			.toString();
