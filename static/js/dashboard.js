@@ -97,7 +97,12 @@ function gerar_dashboard() {
 
 		html_anotacao_click.innerHTML = data_json['clicks_anotacao']
 		html_anotacao_realizada.innerHTML = data_json['anotacao_realizada']
-		html_anotacao_porcentagem.innerHTML = parseInt(data_json['anotacao_realizada'] / data_json['clicks_anotacao'] * 100 || 0) + '%'
+
+		if (data_json['clicks_anotacao'] > 0)
+			_valor = parseInt(data_json['anotacao_realizada'] / data_json['clicks_anotacao'] * 100) + '%'
+		else
+			_valor = '0%'
+		html_anotacao_porcentagem.innerHTML = _valor
 
 		html_duvida_click.innerHTML = data_json['clicks_duvida']
 		html_duvida_realizada.innerHTML = data_json['duvida_enviada']
