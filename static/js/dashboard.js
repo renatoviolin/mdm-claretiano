@@ -103,19 +103,42 @@ function gerar_dashboard() {
 		else
 			_valor = '0%'
 		html_anotacao_porcentagem.innerHTML = _valor
-
 		html_duvida_click.innerHTML = data_json['clicks_duvida']
 		html_duvida_realizada.innerHTML = data_json['duvida_enviada']
-		html_duvida_porcentagem.innerHTML = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100 || 0) + '%'
+
+
+		if (data_json['clicks_duvida'] > 0)
+			_valor = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100 || 0) + '%'
+		else
+			_valor = '0%'
+		html_duvida_porcentagem.innerHTML = _valor
 
 		html_pesquisa_click.innerHTML = data_json['clicks_pesquisa']
 		html_pesquisa_realizada.innerHTML = data_json['total_pesquisa']
 		html_pesquisa_total_link.innerHTML = data_json['total_links']
 		html_pesquisa_resultado.innerHTML = data_json['pesquisa_clicado'].length
 		html_pesquisa_util.innerHTML = data_json['pesquisa_util'].length
-		html_pesquisa_realizada_porcentagem.innerHTML = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100 || 0) + '%'
-		html_pesquisa_porcentagem.innerHTML = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100 || 0) + '%'
-		html_pesquisa_util_porcentagem.innerHTML = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100 || 0) + '%'
+
+
+		if (data_json['clicks_pesquisa'] > 0)
+			_valor = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100 || 0) + '%'
+		else
+			_valor = '0%'
+		html_pesquisa_realizada_porcentagem.innerHTML = _valor
+
+
+		if (data_json['total_links'] > 0)
+			_valor = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100 || 0) + '%'
+		else
+			_valor = '0%'
+		html_pesquisa_porcentagem.innerHTML = _valor
+
+
+		if (data_json['pesquisa_clicado'].length > 0)
+			_valor = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100 || 0) + '%'
+		else
+			_valor = '0%'
+		html_pesquisa_util_porcentagem.innerHTML = _valor
 
 		html_dicionario_click.innerHTML = data_json['clicks_dicionario']
 		html_impressao_click.innerHTML = data_json['clicks_imprimir']
