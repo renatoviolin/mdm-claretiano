@@ -24,7 +24,7 @@ jQuery(document).ready(function () {
 	all_h = jQuery('p')
 	for (i = 0; i < all_h.length; i++) {
 		h = all_h[i]
-		jQuery(h).nextUntil('p').add(jQuery(h)).wrapAll('<div class="linha" id=' + i + '>')
+		jQuery(h).wrapAll('<div class="linha" id=' + i + '>')
 	}
 
 	jQuery('.fl-content').find('a').attr('target', '_blank')
