@@ -108,7 +108,7 @@ function gerar_dashboard() {
 
 
 		if (data_json['clicks_duvida'] > 0)
-			_valor = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100 || 0) + '%'
+			_valor = parseInt(data_json['duvida_enviada'] / data_json['clicks_duvida'] * 100) + '%'
 		else
 			_valor = '0%'
 		html_duvida_porcentagem.innerHTML = _valor
@@ -121,21 +121,21 @@ function gerar_dashboard() {
 
 
 		if (data_json['clicks_pesquisa'] > 0)
-			_valor = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100 || 0) + '%'
+			_valor = parseInt(data_json['total_pesquisa'] / data_json['clicks_pesquisa'] * 100) + '%'
 		else
 			_valor = '0%'
 		html_pesquisa_realizada_porcentagem.innerHTML = _valor
 
 
 		if (data_json['total_links'] > 0)
-			_valor = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100 || 0) + '%'
+			_valor = parseInt(data_json['pesquisa_clicado'].length / data_json['total_links'] * 100) + '%'
 		else
 			_valor = '0%'
 		html_pesquisa_porcentagem.innerHTML = _valor
 
 
 		if (data_json['pesquisa_clicado'].length > 0)
-			_valor = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100 || 0) + '%'
+			_valor = parseInt(data_json['pesquisa_util'].length / data_json['pesquisa_clicado'].length * 100) + '%'
 		else
 			_valor = '0%'
 		html_pesquisa_util_porcentagem.innerHTML = _valor
