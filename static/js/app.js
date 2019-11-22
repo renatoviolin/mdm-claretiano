@@ -14,6 +14,19 @@ var BASE_URL = "http://renato.dynu.net:8000";
 var link;
 
 jQuery(document).ready(function () {
+
+	// Adiciona ID em cada parágrafo
+	all_p = jQuery("p");
+	for (i = 0; i < all_p.length; i++) all_p[i].id = i;
+
+
+	// ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================
+	all_h = jQuery('p')
+	for (i = 0; i < all_h.length; i++) {
+		h = all_h[i]
+		jQuery(h).nextUntil('h2').add(jQuery(h)).wrapAll('<div class="linha" id=' + i + '>')
+	}
+
 	jQuery('.fl-content').find('a').attr('target', '_blank')
 
 	jQuery.fn.center = function () {
@@ -66,8 +79,6 @@ jQuery(document).ready(function () {
 		selected_text = "";
 	});
 
-	all_p = jQuery("p");
-	for (i = 0; i < all_p.length; i++) all_p[i].id = i;
 
 	jQuery(".col-sm-8, .fl-content").bind("mouseup", function (e) {
 		selected_text = x.Selector.getSelected()
@@ -125,11 +136,8 @@ jQuery(document).ready(function () {
 	}
 
 	jQuery(document).on("click", "a", function (e) {
-		// ignora clicks no sumário
-		console.log(e)
 		link = jQuery(e.currentTarget).attr("href");
 		logar_link_clicado("", link);
-		// e.preventDefault();
 	});
 
 	jQuery(document).on("click", "#anotacao_btn_menu", function (e) {
@@ -154,10 +162,4 @@ jQuery(document).ready(function () {
 		logar_ferramenta(7);
 	});
 
-	// ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================
-	// all_h = jQuery('h2')
-	// for (i = 0; i < all_h.length; i++) {
-	//   h = all_h[i]
-	//   jQuery(h).nextUntil('h2').add(jQuery(h)).wrapAll('<div class="linha" id=' + i + '>')
-	// }
 });
