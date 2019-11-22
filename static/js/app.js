@@ -58,7 +58,8 @@ jQuery(document).ready(function () {
 		pageY = e.pageY;
 	});
 
-	jQuery(".col-sm-8, .fl-rich-text").mousedown(function (e) {
+	// jQuery(".col-sm-8, .fl-rich-text").mousedown(function (e) {
+	jQuery(".col-sm-8, .fl-content").mousedown(function (e) {
 		element_mouse_over = document.elementFromPoint(e.clientX, e.clientY);
 		selected_text = "";
 	});
