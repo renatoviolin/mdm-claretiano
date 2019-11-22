@@ -125,6 +125,8 @@ jQuery(document).ready(function () {
 	}
 
 	jQuery(document).on("click", "a", function (e) {
+		// ignora clicks no sumário
+		console.log(e)
 		link = jQuery(e.currentTarget).attr("href");
 		logar_link_clicado("", link);
 		// e.preventDefault();
