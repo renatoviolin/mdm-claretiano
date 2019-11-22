@@ -37,8 +37,8 @@ jQuery(document).ready(function () {
 
 
 	if (window.localStorage['ra'] == null) {
-		ra_aluno = prompt("Digite seu RA", "1");
-		if (ra_aluno == null) {
+		ra_aluno = prompt("Digite seu RA");
+		if ((ra_aluno == null) || (ra_aluno == '')) {
 			return;
 		}
 		window.localStorage['ra'] = ra_aluno
@@ -123,7 +123,6 @@ jQuery(document).ready(function () {
 
 	jQuery(document).on("click", "a", function (e) {
 		link = jQuery(e.currentTarget).attr("href");
-		console.log(link)
 		logar_link_clicado("", link);
 		// e.preventDefault();
 	});
