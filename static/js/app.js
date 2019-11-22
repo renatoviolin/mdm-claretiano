@@ -14,7 +14,7 @@ var BASE_URL = "http://renato.dynu.net:8000";
 var link;
 
 jQuery(document).ready(function () {
-	alert(' ddd    dd')
+	alert(' d dd    dd')
 	jQuery.fn.center = function () {
 		this.css("position", "absolute");
 		this.css("top", Math.max(0, (jQuery(window).height() - jQuery(this).outerHeight()) / 2 + jQuery(window).scrollTop()) + "px");
