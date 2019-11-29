@@ -89,9 +89,9 @@ jQuery(document).ready(function () {
 		range = x.Selector.getSelected().getRangeAt(0);
 		// console.log(range)
 		// se deu dois clicks e pegou o final do range como outro elemento
-		console.log(range)
 		if (range.endOffset == 0) {
-			console.log("entrou no range");
+			console.log(range)
+			console.log("entrou no range == 0");
 			range.setEnd(range.startContainer, range.endContainer.previousElementSibling.innerHTML.length);
 		}
 
