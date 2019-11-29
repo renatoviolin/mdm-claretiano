@@ -1,6 +1,8 @@
 /* =============== MENU LATERAL AZUL ============== */
 x-anotacao-ancora {
 	border: solid 0.5px black;
+	width: auto;
+	height: auto;
 }
 
 .menu_lateral {
