@@ -21,11 +21,11 @@ jQuery(document).ready(function () {
 
 
 	// ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================
-	all_p2 = jQuery('p h')
-	for (i = 0; i < all_p2.length; i++) {
-		p2 = all_p2[i]
-		jQuery(p2).wrapAll('<x-anotacao-ancora id=' + i + '>')
-	}
+	// all_p2 = jQuery('p h')
+	// for (i = 0; i < all_p2.length; i++) {
+	// 	p2 = all_p2[i]
+	// 	jQuery(p2).wrapAll('<x-anotacao-ancora id=' + i + '>')
+	// }
 
 	jQuery('.fl-content').find('a').attr('target', '_blank')
 
