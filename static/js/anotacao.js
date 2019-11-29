@@ -13,11 +13,7 @@ jQuery(document).ready(function () {
 			alert("Selecione um texto");
 			return;
 		}
-		if (
-			jQuery(element_mouse_selected_id)
-				.html()
-				.includes("x-anotacao-destaque")
-		) {
+		if (jQuery(element_mouse_selected_id).html().includes("x-anotacao-destaque")) {
 			alert("Apenas um comentário por parágrafo");
 			return;
 		}
