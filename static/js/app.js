@@ -21,7 +21,7 @@ jQuery(document).ready(function () {
 
 
 	// ========== ADICIONA LINHAS AO REDOR DOS HEADERS ================
-	all_p2 = jQuery('p h')
+	all_p2 = jQuery('p')
 	for (i = 0; i < all_p2.length; i++) {
 		p2 = all_p2[i]
 		jQuery(p2).wrapAll('<x-anotacao-ancora id=' + i + '>')
@@ -89,6 +89,7 @@ jQuery(document).ready(function () {
 		range = x.Selector.getSelected().getRangeAt(0);
 		// console.log(range)
 		// se deu dois clicks e pegou o final do range como outro elemento
+		console.log(range)
 		if (range.endOffset == 0) {
 			console.log("entrou no range");
 			range.setEnd(range.startContainer, range.endContainer.previousElementSibling.innerHTML.length);
