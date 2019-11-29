@@ -81,9 +81,7 @@ jQuery(document).ready(function () {
 
 
 	jQuery(".col-sm-8, .fl-content").bind("mouseup", function (e) {
-		selected_text = x.Selector.getSelected()
-			.getRangeAt(0)
-			.toString();
+		selected_text = x.Selector.getSelected().getRangeAt(0).toString();
 		element_mouse_selected = element_mouse_over;
 		element_mouse_selected_id = element_mouse_over;
 		range = x.Selector.getSelected().getRangeAt(0);
