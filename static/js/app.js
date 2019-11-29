@@ -87,10 +87,11 @@ jQuery(document).ready(function () {
 		element_mouse_selected = element_mouse_over;
 		element_mouse_selected_id = element_mouse_over;
 		range = x.Selector.getSelected().getRangeAt(0);
+		console.log(x.Selector.getSelected())
 		// console.log(range)
 		// se deu dois clicks e pegou o final do range como outro elemento
 		if (range.endOffset == 0) {
-			console.log(range)
+			// console.log(range)
 			console.log("entrou no range == 0");
 			range.setEnd(range.startContainer, range.endContainer.previousElementSibling.innerHTML.length);
 		}
