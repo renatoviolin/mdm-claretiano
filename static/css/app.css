@@ -1,4 +1,8 @@
 /* =============== MENU LATERAL AZUL ============== */
+x-anotacao-ancora {
+	border: solid 0.5px black;
+}
+
 .menu_lateral {
   position: fixed;
   background-color: rgb(13, 59, 142);
